@@ -100,20 +100,27 @@ numBlocks = 0
 blocks = {}
 
 function deleteBlock(index)
+    -- ブロックが存在しない場合は無視する
     if (blocks[index] == nil) then
+        -- returnはここで関数を終了させる命令です
         return
     end
 
+    -- removeSelf()は自分を画面から消す関数です
     blocks[index]:removeSelf()
+    -- もう表示されていないので空を表す `nil` を入れておきましょう
     blocks[index] = nil
+    -- 一つブロックを削除したので、 `numBlocks` を `-1` しておきましょう
     numBlocks = numBlocks - 1
 end
 
 function deleteAllBlocks()
+    -- for文でブロックを全て削除
     for i = 0, maxNumBlocks, 1 do
         deleteBlock(i)
     end
 
+    -- ブロックを管理している変数を全て初期化する
     maxNumBlocks = 0
     numBlocks = 0
     blocks = {}
