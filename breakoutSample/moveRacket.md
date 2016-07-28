@@ -1,6 +1,6 @@
 # 8. ラケットを動かそう
 
-```
+```lua
 function racketMove(event)
     racket.x = event.x
 end

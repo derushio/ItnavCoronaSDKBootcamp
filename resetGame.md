@@ -1,6 +1,6 @@
 # 11. ゲームをリセット
 
-```
+```lua
 function resetGame()
     Runtime:removeEventListener("tap", resetGame)
 

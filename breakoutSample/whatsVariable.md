@@ -17,7 +17,7 @@
 `=` を真ん中に、左辺を保存先の変数名にし、右側を保存する物(変数名、文字、数字等)にします。  
 試しに以下のコードを入力しましょう。 `width` に横幅、 `height` に縦幅が保存されます。
 
-```
+```lua
 -- `width` は画面の横幅(1080)が入っている
 width = display.contentWidth
 -- `height` は画面の縦幅(1920)が入っている
@@ -27,14 +27,14 @@ height = display.contentHeight
 また、CoronaSDKで画面を描画する際に必要な描画グループを作ってdisplayGroupに保存しておきましょう。  
 以下のコードを入力しましょう。
 
-```
+```lua
 -- 描画グループ
 displayGroup = display.newGroup()
 ```
 
 このセクションではコードが以下のようになっていれば成功です。
 
-```
+```lua
 -- `width` は画面の横幅(1080)が入っている
 width = display.contentWidth
 -- `height` は画面の縦幅(1920)が入っている

@@ -1,6 +1,6 @@
 # 7. ラケットを配置しよう
 
-```
+```lua
 racket = display.newRect(displayGroup, width/2, 1700, 200, 20)
 racket.tag = "racket"
 racket:setFillColor(1.0, 1.0, 0.0)

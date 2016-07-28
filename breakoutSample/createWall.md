@@ -2,7 +2,7 @@
 
 背景が黒では寂しいので、以下のコードで背景を描画しましょう。
 
-```
+```lua
 -- 背景黒では寂しいので、背景を追加しましょう
 background = display.newImageRect(displayGroup, "bg_space.png", width, height)
 background.x = width/2
@@ -20,7 +20,7 @@ background.y = height/2
 テーブルは `walls = {}` で宣言でき、 `walls[0]`, `walls[1]` のような形でアクセスできます。  
 また、変数の内容を識別しやすいように `tag` にどこの壁なのかを入れておきましょう。  
 
-```
+```lua
 以下のコードを書き、壁を描画してみましょう。 
 -- 壁の連想配列を作ろう
 walls = {}
@@ -43,7 +43,7 @@ for文とは、 `for i = 最初の値, 最後の値(含む), 幾つづつiをプ
 `physics.addBody(登録する物, 種類, オプション)` で物理演算に登録できます。種類は"static"で移動しないオブジェクト、"dynamic"で移動するオブジェクトです。  
 以下のコードを入力してみましょう。
 
-```
+```lua
 -- for i = 最初の値, 最後の値(含む), 幾つづつiをプラスするか do ~ end
 -- `#` は要素数
 for i = 1, #walls, 1 do

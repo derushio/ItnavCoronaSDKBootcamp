@@ -1,6 +1,6 @@
 # 6. ブロックを配置してみよう
 
-```
+```lua
 maxNumBlocks = 0
 numBlocks = 0
 

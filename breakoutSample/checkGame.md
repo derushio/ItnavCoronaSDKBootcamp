@@ -1,6 +1,6 @@
 # 9. ゲーム判定を追加しよう
 
-```
+```lua
 completeText = nil
 
 function completeGame()

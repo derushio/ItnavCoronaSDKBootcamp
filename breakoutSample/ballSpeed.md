@@ -1,6 +1,6 @@
 # 10. ボールの角度と速度を安定させよう
 
-```
+```lua
 function ballStabilization()
     -- 速度を取得して、x,yの速度を500に固定する
     local vx, vy = ball:getLinearVelocity()
