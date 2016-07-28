@@ -1,5 +1,6 @@
 # 1. プロジェクト作成
 
+## プロジェクト作成
 NEW PROJECTを選びましょう
 
 ![](./image/createBreakoutSample1.png)
@@ -13,6 +14,9 @@ OKを押すと `Open in Editor` と `Show in Finder` が表示されるので、
 
 ![](./image/createBreakoutSample3.png)
 
+- - -
+
+## プロジェクト作成後
 エディターを開くと以下のような画面が表示されます。<br />
 この画面の中の `-- Your code here` の末尾から改行してコードを書き始めます。
 
