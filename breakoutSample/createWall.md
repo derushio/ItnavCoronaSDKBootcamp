@@ -62,10 +62,6 @@ for i = 1, #walls, 1 do
 end
 ```
 
-以下のような画面がシミュレーターで表示されれば成功です。
-
-![](./image/execBreakoutSample1.png)
-
 - - -
 
 ## セクション中の全文
