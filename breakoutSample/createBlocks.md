@@ -35,7 +35,7 @@ function deployBlocks()
         for x = 0, 4, 1 do
             -- 何番目の要素か
             local index = x + (y * 5)
-            blocks[index] = display.newImageRect(displayGroup, "block.jpg", width * 1/8, 100)
+            blocks[index] = display.newImageRect(displayGroup, "block.png", width * 1/8, 100)
             blocks[index].x = (x + 1) * (width * 1/6)
             blocks[index].y = 400 + (200 * y)
             blocks[index].tag = "block"
