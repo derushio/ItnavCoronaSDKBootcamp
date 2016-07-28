@@ -21,3 +21,8 @@ OKを押すと `Open in Editor` と `Show in Finder` が表示されるので、
 この画面の中の `-- Your code here` の末尾から改行してコードを書き始めます。
 
 ![](./image/writeBreakoutSample1.png)
+
+- - -
+
+## セクション中の全文
+このセクションではコードを書きません。
