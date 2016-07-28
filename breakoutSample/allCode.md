@@ -174,12 +174,12 @@ physics.addBody(racket, "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 
 -- ############################## ラケットを動かそう ##############################
 
-function racketMove(xPosition)
+function moveRacket(xPosition)
     racket.x = xPosition
 end
 
 function displayTouchListener(event)
-   racketMove(event.x) 
+   moveRacket(event.x) 
 end
 
 -- 画面全体のタッチイベントを設定
