@@ -1,7 +1,6 @@
 # Summary
 
-* README.md
-  * [[ブロック崩しを作ってみよう]()](breakoutSample/index.md)
-
-
+* [Introduction](README.md)
+* [README.md](README.md)
+   * [[ブロック崩しを作ってみよう]()](breakoutSample/index.md)
 
