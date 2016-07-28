@@ -12,7 +12,7 @@
         * [8. ラケットを動かそう](./breakoutSample/moveRacket.md)
         * [9. ゲーム判定を追加しよう](./breakoutSample/checkGame.md)
         * [10. ボールの角度と速度を安定させよう](./breakoutSample/ballSpeed.md)
-        * [11. ゲームをリセット]()
+        * [11. ゲームをリセット](./resetGame.md)
         * [コード全体](./breakoutSample/allCode.md)
     * [API Sample](./apiSample/index.md)
 
