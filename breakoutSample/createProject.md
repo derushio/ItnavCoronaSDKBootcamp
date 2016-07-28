@@ -1,4 +1,7 @@
-# 1. まずはプロジェクトを作りましょう
+# 1. プロジェクト作成
 
+![](createBreakoutSample1.png)
 
-![](createBreakoutSample3.png)![](createBreakoutSample2.png)![](createBreakoutSample1.png)
+![](createBreakoutSample2.png)
+
+![](createBreakoutSample3.png)
