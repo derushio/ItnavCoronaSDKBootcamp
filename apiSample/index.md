@@ -18,10 +18,17 @@ local rectangle = display.newRect(100, 200, 40, 30)
 
 ## テキストを表示する
 ```
-local text = display.newText("テキストです", 100, 200, native.systemFont, 16)
+local textT = display.newText("テキストです", 100, 200, native.systemFont, 16)
 ```
 
 上のコードを入力すると「テキストです」がx＝100、y＝200にサイズ１６で表示されます。
+
+## テキストをアップロードする
+```
+textT.text = "テキスト書き直しました。"
+```
+
+テキストを元の「テキストです」から「テキスト書き直しました。」に書き換えます。
 
 ## 画像を表示する
 ```
@@ -137,6 +144,14 @@ physics.removeBody(object)
 object:setLinearVelocity(x、y)
 ```
 
+x軸の速さとy軸の速さをかっこに入れて速さを設定します。
+
+## オブジェクトがスクリーンに出るか
+```
+rect.isVisible = true
+```
+
+ブーリアンでコントロールします。
 
 
 
