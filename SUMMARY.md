@@ -15,4 +15,3 @@
         * [11. ゲームをリセット](./resetGame.md)
         * [コード全体](./breakoutSample/allCode.md)
     * [API Sample](./apiSample/index.md)
-

@@ -9,6 +9,8 @@ background.x = width/2
 background.y = height/2
 ```
 
+- - -
+
 ボールが動いた時に跳ね返るように壁を作っておきましょう。  
 壁は四角形を四隅に配置して作ろうと思うので、 `display.newLine(LeftTopのX座標, LeftTopのY座標, RightBottomのX座標, RightBottomのY座標)` という機能を使って壁を作りたいと思います。  
 しかし、4つ作るからといって  
