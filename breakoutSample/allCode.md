@@ -136,16 +136,22 @@ function deployBlocks()
             -- 何番目の要素か
             local index = x + (y * 5)
             blocks[index] = display.newImageRect(displayGroup, "block.png", width * 1/8, 100)
+            -- (width * 1/6) => 画面を6つに分ける、2つは両端なので、実際に使えるのは4つ
+            -- (x + 1) => 分けた4つのうちの何番目か、0は端っこなので+1して無視する
             blocks[index].x = (x + 1) * (width * 1/6)
+            -- y=0 => 400, y=1 => 600 となる
             blocks[index].y = 400 + (200 * y)
             blocks[index].tag = "block"
+            -- 後で識別しやすいように生成した順番を入れておく
             blocks[index].index = index
             physics.addBody(blocks[index], "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 
+            -- 現在のブロック数を追加
             numBlocks = numBlocks + 1
         end
     end
 
+    -- 生成したブロック数を保存
     maxNumBlocks = numBlocks
 end
 
