@@ -1,1 +1,52 @@
 # API Sample
+
+## 円を表示する
+
+```
+local circle = display.newCircle(100, 200, 20)
+circle:setFillColor(1, 1, 0, 0.5)
+```
+
+上のコードを入力すると半径２０の円がx＝100、y＝200のところに表示されます。円の色を2行目のコードで設定します。
+
+## 長方形を表示する
+```
+local rectangle = display.newRect(100, 200, 40, 30)
+```
+
+上のコードを入力するとx＝100、y＝200に横40、縦30の長方形が表示されます。
+
+## テキストを表示する
+```
+local text = display.newText("テキストです", 100, 200, native.systemFont, 16)
+```
+
+上のコードを入力すると「テキストです」がx＝100、y＝200にサイズ１６で表示されます。
+
+## 画像を表示する
+```
+local rect = display.newImageRect("dice.png", 100, 200)
+```
+
+上のコードを入力するとサイコロの絵（"dice.png"）がx＝100、y＝200に表示されます
+
+## 線を表示する
+```
+local line = display.newLine(10, 20, 30, 40)
+```
+
+上のコードを入力すると線がx＝10、y＝20からx＝30、y＝40に描かれます。
+
+##　グループ作成
+```
+local group = display.newGroup()
+group:insert(line)
+```
+
+上のコードを入力すると
+
+##
+```
+display.save()
+```
+
