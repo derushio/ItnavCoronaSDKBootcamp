@@ -1,15 +1,24 @@
 # 4. 壁を作ろう
 
-ボールが動いた時に跳ね返るように壁を作っておきましょう。<br />
-壁は四角形を四隅に配置して作ろうと思うので、 `display.newLine(LeftTopのX座標, LeftTopのY座標, RightBottomのX座標, RightBottomのY座標)` という機能を使って壁を作りたいと思います。<br />
-しかし、4つ作るからといって<br />
-`walls1 = display.newLine(displayGroup, 0, 0, width, 0)`<br />
-`walls2 = display.newLine(displayGroup, 0, 0, 0, height)`<br />
-...<br />
-とするのはあまり格好良くありません。<br />
-そこで、テーブルを使ってみましょう。<br />
-テーブルは `walls = {}` で宣言でき、 `walls[0]`, `walls[1]` のような形でアクセスできます。<br />
-また、変数の内容を識別しやすいように `tag` にどこの壁なのかを入れておきましょう。<br />
+背景が黒では寂しいので、以下のコードで背景を描画しましょう。
+
+```
+-- 背景黒では寂しいので、背景を追加しましょう
+background = display.newImageRect(displayGroup, "bg_space.png", width, height)
+background.x = width/2
+background.y = height/2
+```
+
+ボールが動いた時に跳ね返るように壁を作っておきましょう。  
+壁は四角形を四隅に配置して作ろうと思うので、 `display.newLine(LeftTopのX座標, LeftTopのY座標, RightBottomのX座標, RightBottomのY座標)` という機能を使って壁を作りたいと思います。  
+しかし、4つ作るからといって  
+`walls1 = display.newLine(displayGroup, 0, 0, width, 0)`  
+`walls2 = display.newLine(displayGroup, 0, 0, 0, height)`  
+...  
+とするのはあまり格好良くありません。  
+そこで、テーブルを使ってみましょう。  
+テーブルは `walls = {}` で宣言でき、 `walls[0]`, `walls[1]` のような形でアクセスできます。  
+また、変数の内容を識別しやすいように `tag` にどこの壁なのかを入れておきましょう。  
 
 ```
 以下のコードを書き、壁を描画してみましょう。 
@@ -28,10 +37,10 @@ walls[4] = display.newLine(displayGroup, 0, height, width, height)
 walls[4].tag = "bottomWall"
 ```
 
-配列にするとfor文で一括処理をすることができます。<br />
-for文とは、 `for i = 最初の値, 最後の値(含む), 幾つづつiをプラスするか do ~ end` の構文で最初の値から最後の値になるまで `do ~ end` の内容を実行します。<br />
-試しに、for文で壁の厚さを変更、物理演算に登録を一括でやってみましょう。<br />
-`physics.addBody(登録する物, 種類, オプション)` で物理演算に登録できます。種類は"static"で移動しないオブジェクト、"dynamic"で移動するオブジェクトです。<br />
+配列にするとfor文で一括処理をすることができます。  
+for文とは、 `for i = 最初の値, 最後の値(含む), 幾つづつiをプラスするか do ~ end` の構文で最初の値から最後の値になるまで `do ~ end` の内容を実行します。  
+試しに、for文で壁の厚さを変更、物理演算に登録を一括でやってみましょう。  
+`physics.addBody(登録する物, 種類, オプション)` で物理演算に登録できます。種類は"static"で移動しないオブジェクト、"dynamic"で移動するオブジェクトです。  
 以下のコードを入力してみましょう。
 
 ```
