@@ -43,3 +43,25 @@ end
 
 gameStart()
 ```
+
+- - -
+
+このセクションで書いたコードは以下が全文になります。
+
+```lua
+ball = display.newImageRect(displayGroup, "star.png", 50, 50)
+ball.tag = "ball"
+physics.addBody(ball, "dynamic", {density = 0.0, friction = 0.0, bounce = 1.0})
+
+function resetBallPos()
+    ball.x = width/2
+    ball.y = 1200
+end
+
+function gameStart()
+    resetBallPos()
+    ball:setLinearVelocity(0, 500)
+end
+
+gameStart()
+```

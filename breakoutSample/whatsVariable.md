@@ -24,7 +24,9 @@ width = display.contentWidth
 height = display.contentHeight
 ```
 
-また、CoronaSDKで画面を描画する際に必要な描画グループを作ってdisplayGroupに保存しておきましょう。  
+- - -
+
+CoronaSDKで画面を描画する際に必要な描画グループを作ってdisplayGroupに保存しておきましょう。  
 以下のコードを入力しましょう。
 
 ```lua
@@ -32,7 +34,9 @@ height = display.contentHeight
 displayGroup = display.newGroup()
 ```
 
-このセクションではコードが以下のようになっていれば成功です。
+- - -
+
+このセクションで書いたコードは以下が全文になります。
 
 ```lua
 -- `width` は画面の横幅(1080)が入っている
