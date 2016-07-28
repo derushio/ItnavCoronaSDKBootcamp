@@ -1,7 +1,7 @@
 # 5. ボールを動かそう
 
 ```lua
-ball = display.newCircle(displayGroup, 0, 0, 25)
+ball = display.newImageRect(displayGroup, "star.png", 50, 50)
 ball.tag = "ball"
 physics.addBody(ball, "dynamic", {density = 0.0, friction = 0.0, bounce = 1.0})
 
