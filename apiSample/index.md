@@ -100,6 +100,44 @@ math.pi
 ```
 πを出します。
 
+## 物理エンジンにオブジェクトを追加する
+```
+physics.addBody(circle, "static", {density = 1, friction = 0.3, bounce = 0.4})
+```
+
+円をディフォルトの"dynamic"から"static"に変え、{}の中にオプショナルな物理的条件を入れます。
+
+## 物理エンジンを開始
+```
+local physics = require("physics")
+physics.start()
+```
+
+物理エンジンを開始します。
+
+## 重力を設定する
+```
+physics.setGravity(x、y)
+```
+
+ディフォルトの（０,⒐８）から重力を変える時に使います。
+
+## 物理エンジンを一時停止する
+```
+physics.pause()
+```
+
+## 物理エンジンに入れたオブジェクトを取り除く
+```
+physics.removeBody(object)
+```
+
+## オブジェクトの速さを設定する
+```
+object:setLinearVelocity(x、y)
+```
+
+
 
 
 
