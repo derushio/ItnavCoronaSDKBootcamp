@@ -12,6 +12,6 @@
         * [8. ラケットを動かそう](./breakoutSample/moveRacket.md)
         * [9. ゲーム判定を追加しよう](./breakoutSample/checkGame.md)
         * [10. ゲームロジックを作ろう](./breakoutSample/gameLogic.md)
-        * [11. ゲームをリセット](./resetGame.md)
+        * [11. ゲームをリセット](./breakoutSample/resetGame.md)
         * [コード全体](./breakoutSample/allCode.md)
     * [API Sample](./apiSample/index.md)
