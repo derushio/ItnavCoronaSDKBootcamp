@@ -1,21 +1,5 @@
 # API Sample
 
-## 端末の幅を取得
-
-```lua
-display.contentWidth
-```
-
-wが端末の幅の長さです。
-
-## 端末の高さを取得
-
-```lua
-display.contentHeight
-```
-
-hが端末の高さです。
-
 ## 絶対値を表示
 
 ```lua
