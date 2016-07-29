@@ -83,9 +83,23 @@ local line = display.newLine(10, 20, 30, 40)
 ## グループ作成
 
 ```lua
+display.newGroup()
+```
+
+```lua
 local group = display.newGroup()
 group:insert(line)
 ```
 
 上のコードを入力すると先ほど作った線が新しいグループに追加されます。  
 グループとは、画面に表示されているオブジェクトをまとめて管理するシステムで、まとめて画面から表示されているオブジェクトを削除したりするときに便利です。
+
+グループに追加されたオブジェクトをまとめて削除する場合は以下のコードです。
+
+```lua
+for i = group.numChildren, 1, -1 do
+    local child = group[i]
+    child.parent:remove(child)
+    child = nil
+end
+```
