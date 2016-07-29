@@ -69,10 +69,14 @@ local rect = display.newImageRect("dice.png", 100, 200)
 ## 線を表示する
 
 ```lua
+display.newLine(左上のx座標, 左上のy座標, 右下のx座標, 右下のy座標)
+```
+
+```lua
 local line = display.newLine(10, 20, 30, 40)
 ```
 
-上のコードを入力すると線がx=10、y=20からx=30、y=40に描かれます。
+上のコードを入力すると線が `(x=10, y=20)` から `(x=30, y=40)` に描かれます。
 
 - - -
 
