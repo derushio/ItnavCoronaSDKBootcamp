@@ -55,10 +55,14 @@ textT.text = "テキスト書き直しました。"
 ## 画像を表示する
 
 ```lua
+display.newImageRect(画像の名前, 幅, 高さ)
+```
+
+```lua
 local rect = display.newImageRect("dice.png", 100, 200)
 ```
 
-上のコードを入力するとサイコロの絵（"dice.png"）がx＝100、y＝200に表示されます
+上のコードを入力すると `サイコロの絵("dice.png")` が `(x＝100, y＝200)` に表示されます。
 
 - - -
 
