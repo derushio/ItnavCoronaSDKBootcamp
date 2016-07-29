@@ -9,7 +9,7 @@ NEW PROJECTを選びましょう。
 
 ![](./image/createBreakoutSample2.png)
 
-OKを押すと `Open in Editor` と `Show in Finder` が表示されるので、`Show in Finder` をし、 `main.lua` をダブルクリックしてエディターで開きましょう。<br />
+OKを押すと `Open in Editor` と `Show in Finder` が表示されるので、`Show in Finder` をし、 `main.lua` をダブルクリックしてエディターで開きましょう。  
 このとき表示されるフォルダーは閉じないでおくと後が楽です。
 
 ![](./image/createBreakoutSample3.png)
@@ -28,7 +28,7 @@ OKを押すと `Open in Editor` と `Show in Finder` が表示されるので、
 - - -
 
 ## プロジェクト作成後
-エディターを開くと以下のような画面が表示されます。<br />
+エディターを開くと以下のような画面が表示されます。  
 この画面の中の `-- Your code here` の末尾から改行してコードを書き始めます。  
 アプリは、英文での命令を順番に書くことで作ることができます。  
 これからこのテキストエディタに命令(コード)をたくさん書いていきます。
