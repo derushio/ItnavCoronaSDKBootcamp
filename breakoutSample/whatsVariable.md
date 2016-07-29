@@ -25,6 +25,9 @@ width = display.contentWidth
 height = display.contentHeight
 ```
 
+書いた後にWindowsは `Ctrl + s` , Mac `Command + s` をすることで保存できます。  
+エラーが表示されなければ成功です。
+
 - - -
 
 ## displayGroupを作ろう
