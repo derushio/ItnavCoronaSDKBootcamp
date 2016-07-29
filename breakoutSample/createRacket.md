@@ -24,3 +24,7 @@ racket.tag = "racket"
 racket:setFillColor(1.0, 1.0, 0.0)
 physics.addBody(racket, "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 ```
+
+画面は以下のようになっていれば成功です。
+
+![](./image/execBreakoutSample6.png)

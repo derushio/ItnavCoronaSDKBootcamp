@@ -26,3 +26,8 @@ physics = require("physics")
 physics.start(true)
 physics.setGravity(0, 0)
 ```
+
+画面は以下のようになっていれば成功です。  
+まだ前のセクションと同じ画面です。
+
+![](./image/execBreakoutSample2.png)

@@ -47,3 +47,8 @@ end
 -- 画面全体のタッチイベントを設定
 Runtime:addEventListener("touch", displayTouchListener)
 ```
+
+画面は以下のようになっていれば成功です。  
+ラケットが動くようになります。
+
+![](./image/execBreakoutSample7.png)

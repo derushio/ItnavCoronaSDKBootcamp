@@ -84,3 +84,8 @@ function resetGame()
     gameStart()
 end
 ```
+
+画面は以下のようになっていれば成功です。  
+ゲームオーバーかゲームクリア後に画面をタップすればリトライできるようになります。
+
+![](./image/execBreakoutSample10.png)

@@ -50,3 +50,7 @@ height = display.contentHeight
 -- 描画グループ
 displayGroup = display.newGroup()
 ```
+
+画面は以下のようになっていれば成功です。
+
+![](./image/execBreakoutSample1.png)

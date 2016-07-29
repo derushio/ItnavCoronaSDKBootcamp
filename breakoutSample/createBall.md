@@ -72,3 +72,7 @@ end
 
 gameStart()
 ```
+
+画面は以下のようになっていれば成功です。
+
+![](./image/execBreakoutSample4.png)

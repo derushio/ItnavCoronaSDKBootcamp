@@ -96,3 +96,7 @@ for i = 1, #walls, 1 do
     physics.addBody(walls[i], "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 end
 ```
+
+画面は以下のようになっていれば成功です。
+
+![](./image/execBreakoutSample3.png)

@@ -49,3 +49,8 @@ function failGame()
     -- Runtime:addEventListener("tap", resetGame)
 end
 ```
+
+画面は以下のようになっていれば成功です。  
+前のセクションと同じ画面です。
+
+![](./image/execBreakoutSample8.png)
