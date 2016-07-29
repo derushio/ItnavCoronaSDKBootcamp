@@ -17,3 +17,4 @@
     * [API Sample](./apiSample/index.md)
         * [便利系Sample](./apiSample/util.md)
         * [画面表示系Sample](./apiSample/display.md)
+        * [数学系Sample](./apiSample/math.md)
