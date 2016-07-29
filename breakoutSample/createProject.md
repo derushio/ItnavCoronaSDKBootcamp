@@ -1,11 +1,11 @@
 # 1. プロジェクト作成
 
 ## プロジェクト作成
-NEW PROJECTを選びましょう
+NEW PROJECTを選びましょう。
 
 ![](./image/createBreakoutSample1.png)
 
-Widthを1080、Heightを1920に設定しましょう
+プロジェクト名に `BreakoutSample` と入力し、Widthを1080、Heightを1920に設定しましょう。
 
 ![](./image/createBreakoutSample2.png)
 
