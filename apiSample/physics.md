@@ -69,3 +69,18 @@ rect.isVisible = true
 ```
 
 ブーリアンでコントロールします。
+
+- - -
+
+## 衝突判定
+
+```lua
+function onCollision(event)
+    event.other.isVisible = false
+end
+
+ball:addEventListener("collision", onCollision)
+```
+
+`ball` と衝突したオブジェクトを見えなくします。  
+衝突したオブジェクトは `event.other` で取ることができます。
