@@ -20,4 +20,9 @@ display.contentHeightが端末の高さです。
 
 ## 音を再生する
 
-(外部リンク)[http://kwiksher.com/bootcamp/corona1/playing_audio.html]
+[外部リンク](http://kwiksher.com/bootcamp/corona1/playing_audio.html)
+
+- - -
+
+## 画面遷移
+[外部リンク](http://kwiksher.com/bootcamp/corona2/composer_gui.html)
