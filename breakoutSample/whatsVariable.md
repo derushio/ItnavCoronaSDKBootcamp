@@ -41,7 +41,7 @@ CoronaSDKで画面を描画する際に必要な描画グループを作ってdi
 displayGroup = display.newGroup()
 ```
 
-CoronaSDK Reference
+CoronaSDK Reference [displayGroup]
 
 [https://docs.coronalabs.com/api/library/display/newGroup.html](https://docs.coronalabs.com/api/library/display/newGroup.html)
 
