@@ -43,7 +43,7 @@ displayGroup = display.newGroup()
 
 
 
-CoronaSDK 公式ドキュメント display.newGroup\(\)
+CoronaSDK Reference
 
 [https://docs.coronalabs.com/api/library/display/newGroup.html](https://docs.coronalabs.com/api/library/display/newGroup.html)
 
