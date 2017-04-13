@@ -29,7 +29,7 @@ height = display.contentHeight
 書いた後にWindowsは `Ctrl + s` , Mac `Command + s` をすることで保存できます。  
 エラーが表示されなければ成功です。
 
-* * -
+---
 
 ## displayGroupを作ろう
 
@@ -41,13 +41,11 @@ CoronaSDKで画面を描画する際に必要な描画グループを作ってdi
 displayGroup = display.newGroup()
 ```
 
-
-
 CoronaSDK Reference
 
 [https://docs.coronalabs.com/api/library/display/newGroup.html](https://docs.coronalabs.com/api/library/display/newGroup.html)
 
--
+---
 
 ## セクション中の全文
 
