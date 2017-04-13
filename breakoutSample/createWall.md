@@ -10,6 +10,9 @@ background.x = width/2
 background.y = height/2
 ```
 
+CoronaSDK Reference
+https://docs.coronalabs.com/api/library/display/newImageRect.html
+
 ---
 
 ## 壁を表示しよう
