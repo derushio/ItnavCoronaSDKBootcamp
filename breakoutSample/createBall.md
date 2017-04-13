@@ -9,7 +9,7 @@ ball = display.newImageRect(displayGroup, "star.png", 50, 50)
 ball.tag = "ball"
 ```
 
-- - -
+---
 
 ## 物理エンジンにボールを追加しよう
 表示できたらボールを物理エンジンに追加しましょう。  
@@ -20,7 +20,7 @@ ball.tag = "ball"
 physics.addBody(ball, "dynamic", {density = 0.0, friction = 0.0, bounce = 1.0})
 ```
 
-- - -
+---
 
 ## ボールの位置を初期化する関数を作ろう
 物理エンジンに追加できたら、ボールの位置を初期位置に戻す関数 `resetBallPos` を宣言しましょう。
@@ -34,7 +34,7 @@ function resetBallPos()
 end
 ```
 
-- - -
+---
 
 ## ボールを初期化してゲームを開始する関数を作ろう
 ボールを初期位置に戻し、ボールを動かし始める関数 `gameStart` を宣言しましょう。
@@ -50,7 +50,10 @@ end
 gameStart()
 ```
 
-- - -
+CoronaSDK Reference [setLinearVelocity]
+[https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
+
+---
 
 ## セクション中の全文
 このセクションで書いたコードの全文は以下になります。
