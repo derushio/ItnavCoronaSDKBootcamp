@@ -46,6 +46,10 @@ walls[4].tag = "bottomWall"
 
 配列にするとfor文で一括処理をすることができます。
 
+
+CoronaSDK Reference [newLine]
+[https://docs.coronalabs.com/api/library/display/newLine.html](https://docs.coronalabs.com/api/library/display/newLine.html)
+
 ---
 
 ## for文で壁を一括で設定してみよう
