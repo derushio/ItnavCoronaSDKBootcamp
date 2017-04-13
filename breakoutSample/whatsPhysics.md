@@ -14,7 +14,10 @@ physics.setGravity(0, 0)
 
 現状では何も動きませんが、次からのセクションで効果を発揮するのでどんどん進みましょう。
 
-- - -
+CoronaSDK Reference
+[https://docs.coronalabs.com/api/library/physics/index.html](https://docs.coronalabs.com/api/library/physics/index.html)
+
+---
 
 ## セクション中の全文
 このセクションで書いたコードの全文は以下になります。
