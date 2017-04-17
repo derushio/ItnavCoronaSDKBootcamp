@@ -43,7 +43,7 @@ displayGroup = display.newGroup()
 
 CoronaSDK Reference [displayGroup]
 
-[https://docs.coronalabs.com/api/library/display/newGroup.html](https://docs.coronalabs.com/api/library/display/newGroup.html)
+[https://docs.coronalabs.com/api/library/display/newGroup](https://docs.coronalabs.com/api/library/display/newGroup.html)
 
 ---
 
