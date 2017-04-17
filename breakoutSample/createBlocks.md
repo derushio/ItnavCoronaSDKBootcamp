@@ -270,4 +270,4 @@ deployBlocks()
 
 画面は以下のようになっていれば成功です。
 
-![](./image/execBreakoutSample5.png)
+![](./image/screen.png)
