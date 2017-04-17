@@ -29,6 +29,9 @@ function ballStabilization()
 end
 ```
 
+CoronaSDK Reference[setLinearVelocity]
+[https://docs.coronalabs.com/api/type/Body/setLinearVelocity](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
+
 ---
 
 ## ボールの当たり判定を追加しよう
