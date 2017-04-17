@@ -49,7 +49,8 @@ walls[4].tag = "bottomWall"
 配列にするとfor文で一括処理をすることができます。
 
 
-参考：CoronaSDK Reference [newLine]
+参考
+CoronaSDK Reference [newLine]
 
 [https://docs.coronalabs.com/api/library/display/newLine](https://docs.coronalabs.com/api/library/display/newLine.html)
 
