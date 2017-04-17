@@ -30,7 +30,7 @@ end
 Runtime:addEventListener("touch", displayTouchListener)
 ```
 
-CoronaSDK Reference[addEventListener]
+参考：CoronaSDK Reference[addEventListener]
 
 [https://docs.coronalabs.com/api/type/EventDispatcher/addEventListener](https://docs.coronalabs.com/api/type/EventDispatcher/addEventListener.html)
 
