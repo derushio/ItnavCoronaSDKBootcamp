@@ -13,7 +13,8 @@ racket:setFillColor(1.0, 1.0, 0.0)
 physics.addBody(racket, "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 ```
 
-参考：CoronaSDK Reference[setFillColor]
+参考
+CoronaSDK Reference[setFillColor]
 
 [https://docs.coronalabs.com/api/type/ShapeObject/setFillColor](https://docs.coronalabs.com/api/type/ShapeObject/setFillColor.html)
 
