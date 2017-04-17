@@ -32,6 +32,9 @@ end
 CoronaSDK Reference[setLinearVelocity]
 [https://docs.coronalabs.com/api/type/Body/setLinearVelocity](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
 
+CoronaSDK Reference[applyTorque]
+[https://docs.coronalabs.com/api/type/Body/applyTorque](https://docs.coronalabs.com/api/type/Body/applyTorque.html)
+
 ---
 
 ## ボールの当たり判定を追加しよう
