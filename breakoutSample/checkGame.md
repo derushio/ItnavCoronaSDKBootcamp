@@ -25,7 +25,8 @@ function failGame()
 end
 ```
 
-CoronaSDK Reference[newText]
+参考：CoronaSDK Reference[newText]
+
 [https://docs.coronalabs.com/api/library/display/newText](https://docs.coronalabs.com/api/library/display/newText.html)
 
 ---
