@@ -23,7 +23,7 @@ physics.addBody(ball, "dynamic", {density = 0.0, friction = 0.0, bounce = 1.0})
 ```
 
 CoronaSDK Reference [addBody]
-[https://docs.coronalabs.com/api/library/physics/addBody.html](https://docs.coronalabs.com/api/library/physics/addBody.html)
+[https://docs.coronalabs.com/api/library/physics/addBody](https://docs.coronalabs.com/api/library/physics/addBody.html)
 
 ---
 
@@ -58,7 +58,7 @@ gameStart()
 ```
 
 CoronaSDK Reference \[setLinearVelocity\]  
-[https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
+[https://docs.coronalabs.com/api/type/Body/setLinearVelocity](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
 
 ---
 
