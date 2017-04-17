@@ -24,7 +24,7 @@ blocks = {}
 function deployBlocks()
 
     -- ブロックを配置
-    for y = 0, 1, 1 do
+    for y = 0, 1, 0 do
         for x = 0, 4, 1 do
             -- 何番目の要素か
             local index = x + (y * 5)
