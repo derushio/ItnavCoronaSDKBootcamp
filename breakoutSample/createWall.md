@@ -10,7 +10,7 @@ background.x = width/2
 background.y = height/2
 ```
 
-CoronaSDK Reference [newImageRect]
+参考：CoronaSDK Reference [newImageRect]
 
 [https://docs.coronalabs.com/api/library/display/newImageRect
 ](https://docs.coronalabs.com/api/library/display/newImageRect.html)
@@ -49,7 +49,7 @@ walls[4].tag = "bottomWall"
 配列にするとfor文で一括処理をすることができます。
 
 
-CoronaSDK Reference [newLine]
+参考：CoronaSDK Reference [newLine]
 
 [https://docs.coronalabs.com/api/library/display/newLine](https://docs.coronalabs.com/api/library/display/newLine.html)
 
@@ -72,7 +72,7 @@ for i = 1, #walls, 1 do
 end
 ```
 
-CoronaSDK Reference[addBody]
+参考：CoronaSDK Reference[addBody]
 
 [https://docs.coronalabs.com/api/library/physics/addBody](https://docs.coronalabs.com/api/library/physics/addBody.html)
 
