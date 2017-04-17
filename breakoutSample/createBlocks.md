@@ -14,52 +14,14 @@ numBlocks = 0
 blocks = {}
 ```
 
-- - -
-
-## ブロックを削除する関数を作ろう
-順序が逆になってしまいますが、説明の都合上、作る前に削除する関数を宣言します。  
-`index(配列の何番目か)` から、ブロックを削除する関数 `deleteBlock` 、  
-配置されているブロックを全て削除する関数 `deleteAllBlocks` を宣言します。
-
-```lua
-function deleteBlock(index)
-    -- ブロックが存在しない場合は無視する
-    if (blocks[index] == nil) then
-        -- returnはここで関数を終了させる命令です
-        return
-    end
-
-    -- removeSelf()は自分を画面から消す関数です
-    blocks[index]:removeSelf()
-    -- もう表示されていないので空を表す `nil` を入れておきましょう
-    blocks[index] = nil
-    -- 一つブロックを削除したので、 `numBlocks` を `-1` しておきましょう
-    numBlocks = numBlocks - 1
-end
-
-function deleteAllBlocks()
-    -- for文でブロックを全て削除
-    for i = 0, maxNumBlocks, 1 do
-        deleteBlock(i)
-    end
-
-    -- ブロックを管理している変数を全て初期化する
-    maxNumBlocks = 0
-    numBlocks = 0
-    blocks = {}
-end
-```
-
-- - -
+---
 
 ## ブロックを配置しよう
-ブロックを配置する関数 `deployBlocks` を宣言しましょう。  
+まず、ブロックを配置する関数 `deployBlocks` を宣言しましょう。  
 また、ゲーム開始時にブロックを初期配置しておきたいので、 `deployBlocks()` 読み込み時に実行するように書いておきましょう。
 
 ```lua
 function deployBlocks()
-    -- ブロックを配置する前に全てのブロックを削除
-    deleteAllBlocks()
 
     -- ブロックを配置
     for y = 0, 1, 1 do
@@ -91,7 +53,54 @@ end
 deployBlocks()
 ```
 
-- - -
+---
+## ブロックを削除する関数を作ろう
+`index(配列の何番目か)` から、ブロックを削除する関数 `deleteBlock` 、
+配置されているブロックを全て削除する関数 `deleteAllBlocks` を宣言します。
+
+```lua
+function deleteBlock(index)
+-- ブロックが存在しない場合は無視する
+if (blocks[index] == nil) then
+-- returnはここで関数を終了させる命令です
+return
+end
+
+-- removeSelf()は自分を画面から消す関数です
+blocks[index]:removeSelf()
+-- もう表示されていないので空を表す `nil` を入れておきましょう
+blocks[index] = nil
+-- 一つブロックを削除したので、 `numBlocks` を `-1` しておきましょう
+numBlocks = numBlocks - 1
+end
+
+function deleteAllBlocks()
+-- for文でブロックを全て削除
+for i = 0, maxNumBlocks, 1 do
+deleteBlock(i)
+end
+
+-- ブロックを管理している変数を全て初期化する
+maxNumBlocks = 0
+numBlocks = 0
+blocks = {}
+end
+```
+
+## ブロックを削除する関数を追加しよう
+配置と削除の関数の準備ができたと思います。
+次に、ブロックを配置する前に全てのブロックを削除する関数`deleteAllBlocks`をdeployBlocksのはじめに実行するようにしましょう。
+
+```lua
+
+function deployBlocks()
+-- ここに追加
+    deleteAllBlocks()
+
+-- ブロック配置
+```
+
+---
 
 ## セクション中の全文
 このセクションで書いたコードの全文は以下になります。
