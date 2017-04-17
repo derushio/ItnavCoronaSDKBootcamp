@@ -73,6 +73,7 @@ end
 ```
 
 CoronaSDK Reference[addBody]
+
 [https://docs.coronalabs.com/api/library/physics/addBody](https://docs.coronalabs.com/api/library/physics/addBody.html)
 
 ---
