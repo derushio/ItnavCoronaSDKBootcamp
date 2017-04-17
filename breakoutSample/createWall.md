@@ -50,6 +50,7 @@ walls[4].tag = "bottomWall"
 
 
 CoronaSDK Reference [newLine]
+
 [https://docs.coronalabs.com/api/library/display/newLine](https://docs.coronalabs.com/api/library/display/newLine.html)
 
 ---
