@@ -11,7 +11,7 @@ function moveRacket(xPosition)
 end
 ```
 
-- - -
+---
 
 ## タッチイベントを設定
 今回はラケットをタッチイベントで動かしましょう。  
@@ -31,6 +31,7 @@ Runtime:addEventListener("touch", displayTouchListener)
 ```
 
 CoronaSDK Reference[addEventListener]
+
 [https://docs.coronalabs.com/api/type/EventDispatcher/addEventListener](https://docs.coronalabs.com/api/type/EventDispatcher/addEventListener.html)
 
 
