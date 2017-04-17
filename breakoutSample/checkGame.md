@@ -25,7 +25,10 @@ function failGame()
 end
 ```
 
-- - -
+CoronaSDK Reference[newText]
+[https://docs.coronalabs.com/api/library/display/newText](https://docs.coronalabs.com/api/library/display/newText.html)
+
+---
 
 ## セクション中の全文
 このセクションで書いたコードの全文は以下になります。
