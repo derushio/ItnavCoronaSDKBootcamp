@@ -12,7 +12,7 @@ background.y = height/2
 
 CoronaSDK Reference [newImageRect]
 
-[https://docs.coronalabs.com/api/library/display/newImageRect.html
+[https://docs.coronalabs.com/api/library/display/newImageRect
 ](https://docs.coronalabs.com/api/library/display/newImageRect.html)
 
 ---
