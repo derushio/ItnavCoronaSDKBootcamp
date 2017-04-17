@@ -29,6 +29,7 @@ function ballStabilization()
 end
 ```
 
+参考
 CoronaSDK Reference[setLinearVelocity]
 [https://docs.coronalabs.com/api/type/Body/setLinearVelocity](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
 
