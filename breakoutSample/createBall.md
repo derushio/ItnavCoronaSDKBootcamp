@@ -22,9 +22,6 @@ ball.tag = "ball"
 physics.addBody(ball, "dynamic", {density = 0.0, friction = 0.0, bounce = 1.0})
 ```
 
-CoronaSDK Reference [addBody]
-[https://docs.coronalabs.com/api/library/physics/addBody](https://docs.coronalabs.com/api/library/physics/addBody.html)
-
 ---
 
 ## ボールの位置を初期化する関数を作ろう
@@ -57,7 +54,8 @@ end
 gameStart()
 ```
 
-CoronaSDK Reference \[setLinearVelocity\]  
+CoronaSDK Reference \[setLinearVelocity\] 
+ 
 [https://docs.coronalabs.com/api/type/Body/setLinearVelocity](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
 
 ---
