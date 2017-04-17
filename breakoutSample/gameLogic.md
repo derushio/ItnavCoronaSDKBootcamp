@@ -29,7 +29,7 @@ function ballStabilization()
 end
 ```
 
-- - -
+---
 
 ## ボールの当たり判定を追加しよう
 ブロック崩しなので、ボールがブロックに当たった場合はブロックを消し、全て消した場合はクリアとしなければならない。  
@@ -62,7 +62,7 @@ end
 ball:addEventListener("collision", ballCollision)
 ```
 
-- - -
+---
 
 ## セクション中の全文
 このセクションで書いたコードの全文は以下になります。
