@@ -73,7 +73,8 @@ for i = 1, #walls, 1 do
 end
 ```
 
-参考：CoronaSDK Reference[addBody]
+参考
+CoronaSDK Reference[addBody]
 
 [https://docs.coronalabs.com/api/library/physics/addBody](https://docs.coronalabs.com/api/library/physics/addBody.html)
 
