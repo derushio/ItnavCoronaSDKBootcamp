@@ -33,12 +33,16 @@ CoronaSDK Reference[contentHeight]
 
 ``` lua
 
-native.newTextBox( centerX, centerY, width, height )
+defaultBox.newTextBox( centerX, centerY, width, height )
+
+-- テキストボックスを編集可能にする
+defaultBox.isEditable = true
 
 ```
 
 centerXはx座標の位置を、centerYはY座標の位置を指定でき、
 widthは横幅を、heightは高さを指定できます。
+isEditableは"false"を入力すると編集できなくなります。
 
 参考
 CoronaSDK Reference[newTextBox]
@@ -50,7 +54,7 @@ CoronaSDK Reference[newTextBox]
 
 [外部リンク](http://kwiksher.com/bootcamp/corona1/playing_audio.html)
 
-- - -
+---
 
 ## 画面遷移
 [外部リンク](http://kwiksher.com/bootcamp/corona2/composer_gui.html)
