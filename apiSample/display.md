@@ -83,6 +83,10 @@ local line = display.newLine(10, 20, 30, 40)
 
 上のコードを入力すると線が `(x=10, y=20)` から `(x=30, y=40)` に描かれます。
 
+参考
+CoronaSDK Reference[newLine]
+[https://docs.coronalabs.com/api/library/display/newLine](https://docs.coronalabs.com/api/library/display/newLine.html)
+
 ---
 
 ## グループ作成
@@ -108,3 +112,7 @@ for i = group.numChildren, 1, -1 do
     child = nil
 end
 ```
+
+参考
+CoronaDSK Reference[newGroup]
+[https://docs.coronalabs.com/api/library/display/newGroup](https://docs.coronalabs.com/api/library/display/newGroup.html)
