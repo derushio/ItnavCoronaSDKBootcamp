@@ -10,6 +10,7 @@ display.contentWidthが端末の幅の長さです。
 
 参考
 CoronaSDK Reference　[contentWidth]
+
 [https://docs.coronalabs.com/api/library/display/contentWidth](https://docs.coronalabs.com/api/library/display/contentWidth.html)
 
 ---
