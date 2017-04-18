@@ -29,6 +29,11 @@ physics.start()
 
 物理エンジンを開始します。
 
+参考
+CoronaSDK Reference[start]
+
+[https://docs.coronalabs.com/api/library/physics/start](https://docs.coronalabs.com/api/library/physics/start.html)
+
 ---
 
 ## 重力を設定する
@@ -37,7 +42,11 @@ physics.start()
 physics.setGravity(x、y)
 ```
 
-ディフォルトの `(0, 9.8)` から重力を変える時に使います。
+デフォルトの `(0, 9.8)` から重力を変える時に使います。
+
+参考
+CoronaSDK Reference[setGravity]
+[https://docs.coronalabs.com/api/library/physics/setGravity](https://docs.coronalabs.com/api/library/physics/setGravity.html)
 
 ---
 
@@ -47,6 +56,10 @@ physics.setGravity(x、y)
 physics.pause()
 ```
 
+CoronaSDK Reference[pause]
+
+[https://docs.coronalabs.com/api/library/physics/pause](https://docs.coronalabs.com/api/library/physics/pause.html)
+
 ---
 
 ## 物理エンジンに入れたオブジェクトを取り除く
@@ -54,6 +67,10 @@ physics.pause()
 ```lua
 physics.removeBody(object)
 ```
+
+参考
+CoronaSDK Reference[removeBody]
+[https://docs.coronalabs.com/api/library/physics/removeBody](https://docs.coronalabs.com/api/library/physics/removeBody.html)
 
 ---
 
@@ -65,6 +82,11 @@ object:setLinearVelocity(x、y)
 
 x軸の速さとy軸の速さをかっこに入れて速さを設定します。
 
+参考
+CoronaSDK Reference[setVelocity]
+
+[https://docs.coronalabs.com/api/type/Body/setLinearVelocity](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
+
 ---
 
 ## オブジェクトがスクリーンに出るか
@@ -74,6 +96,11 @@ rect.isVisible = true
 ```
 
 ブーリアンでコントロールします。
+
+参考
+CoronaSDK Reference[isVisible]
+
+[https://docs.coronalabs.com/api/type/DisplayObject/isVisible](https://docs.coronalabs.com/api/type/DisplayObject/isVisible.html)
 
 ---
 
@@ -89,3 +116,9 @@ ball:addEventListener("collision", onCollision)
 
 `ball` と衝突したオブジェクトを見えなくします。  
 衝突したオブジェクトは `event.other` で取ることができます。
+
+参考
+CoronaSDK Reference[collision]
+
+[https://docs.coronalabs.com/api/event/collision/index](https://docs.coronalabs.com/api/event/collision/index.html)
+
