@@ -57,7 +57,7 @@ math.cos(x)
 CoronaSDK Reference[math.cos]
 
 [https://docs.coronalabs.com/api/library/math/cos](https://docs.coronalabs.com/api/library/math/cos.html)
-- - -
+---
 
 ## Tan
 
@@ -72,7 +72,7 @@ CoronaSDK Reference[math.tan]
 
 [https://docs.coronalabs.com/api/library/math/tan](https://docs.coronalabs.com/api/library/math/tan.html)
 
-- - -
+---
 
 ## pi
 
