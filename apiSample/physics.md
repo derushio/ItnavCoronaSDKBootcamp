@@ -13,6 +13,11 @@ physics.addBody(circle, "static", {density = 1, friction = 0.3, bounce = 0.4})
 circle(円だと仮定します)を `"static"(動かないオブジェクト)` で物理エンジンに登録します。  
 動くオブジェクトの場合は `"dynamic"` を指定します。
 
+参考
+CoronaSDK Reference[physics.addBody]
+
+[https://docs.coronalabs.com/api/library/physics/addBody](https://docs.coronalabs.com/api/library/physics/addBody.html)
+
 - - -
 
 ## 物理エンジンを開始
