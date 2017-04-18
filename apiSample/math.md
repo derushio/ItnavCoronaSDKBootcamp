@@ -8,7 +8,11 @@ local b = math.abs(-15)
 
 bは15になります。
 
-- - -
+参考
+CoronaSDK Reference[math.abs]
+[https://docs.coronalabs.com/api/library/math/abs](https://docs.coronalabs.com/api/library/math/abs.html)
+
+---
 
 ## ランダムに数字を出す
 
@@ -17,7 +21,12 @@ math.random(10)
 ```
 ランダムに１から１０までの整数を一つ表示します。
 
-- - -
+参考
+CoronaSDK Reference[math.random]
+
+[https://docs.coronalabs.com/api/library/math/random](https://docs.coronalabs.com/api/library/math/random.html)
+
+---
 
 ## Sin 
 
@@ -27,7 +36,7 @@ math.sin(x)
 
 -1.0から+1.0までの少数をx(ラジアン)を元に出します。
 
-- - -
+---
 
 ## Cos
 
