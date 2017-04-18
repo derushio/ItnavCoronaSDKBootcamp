@@ -90,3 +90,10 @@ end
 あとは `timer1 = timer.performWithDelay(1000, timerEvent, 0（繰り返す回数）)` で  
 `1000ミリ秒（1秒）` ごとにtimerEventをずっと繰り返すという処理を書いて簡単なタイマーを作成します。  
 繰り返す回数を `0` や `-1` にするとアプリケーションが起動中はずっと繰り返します。  
+
+参考
+CoronaSDK Reference[timer]
+
+[https://docs.coronalabs.com/api/library/timer/performWithDelay](https://docs.coronalabs.com/api/library/timer/performWithDelay.html)
+
+
