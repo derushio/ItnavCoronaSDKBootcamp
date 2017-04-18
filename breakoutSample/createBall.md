@@ -160,5 +160,5 @@ gameStart()
 
 画面は以下のようになっていれば成功です。
 
-![](./image/execBreakoutSample4.png)
+![](./image/execBreakoutSample5.png)
 
