@@ -67,7 +67,7 @@ local rect = display.newImageRect("dice.png", 100, 200)
 参考
 CoronaSDK Reference[newImageR]
 
-[https://docs.coronalabs.com/api/library/display/newImageRectRect](https://docs.coronalabs.com/api/library/display/newImageRect.html)
+[https://docs.coronalabs.com/api/library/display/newImageRect](https://docs.coronalabs.com/api/library/display/newImageRect.html)
 
 ---
 
