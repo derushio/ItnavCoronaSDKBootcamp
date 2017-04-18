@@ -52,6 +52,11 @@ math.cos(x)
 
 -1.0から+1.0までの数字をx(ラジアン)を元に出します。
 
+
+参考
+CoronaSDK Reference[math.cos]
+
+[https://docs.coronalabs.com/api/library/math/cos](https://docs.coronalabs.com/api/library/math/cos.html)
 - - -
 
 ## Tan
