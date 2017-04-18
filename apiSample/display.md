@@ -14,7 +14,7 @@ circle:setFillColor(1, 1, 0, 0.5)
 上のコードを入力すると `半径20` の円が `(x=100, y=200)` のところに表示されます。  
 円の色を2行目のコードで設定します。
 
-- - -
+---
 
 ## 長方形を表示する
 
@@ -28,7 +28,7 @@ local rectangle = display.newRect(100, 200, 40, 30)
 
 上のコードを入力すると `(x=100, y=200)` に `幅40` 、 `高さ30` の長方形が表示されます。
 
-- - -
+---
 
 ## テキストを表示する
 
@@ -50,7 +50,7 @@ textT.text = "テキスト書き直しました。"
 
 `テキストの変数名.text` で今表示しているテキストにアクセスできます。取得や設定もこの変数からできます。
 
-- - -
+---
 
 ## 画像を表示する
 
@@ -64,7 +64,12 @@ local rect = display.newImageRect("dice.png", 100, 200)
 
 上のコードを入力すると `サイコロの絵("dice.png")` が `(x=100, y=200)` に表示されます。
 
-- - -
+参考
+CoronaSDK Reference[newImageR]
+
+[https://docs.coronalabs.com/api/library/display/newImageRectRect](https://docs.coronalabs.com/api/library/display/newImageRect.html)
+
+---
 
 ## 線を表示する
 
@@ -78,7 +83,7 @@ local line = display.newLine(10, 20, 30, 40)
 
 上のコードを入力すると線が `(x=10, y=20)` から `(x=30, y=40)` に描かれます。
 
-- - -
+---
 
 ## グループ作成
 
