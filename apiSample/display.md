@@ -14,6 +14,10 @@ circle:setFillColor(1, 1, 0, 0.5)
 上のコードを入力すると `半径20` の円が `(x=100, y=200)` のところに表示されます。  
 円の色を2行目のコードで設定します。
 
+参考
+CoronaSDK Reference[newCircle]
+[https://docs.coronalabs.com/api/library/display/newCircle](https://docs.coronalabs.com/api/library/display/newCircle.html)
+
 ---
 
 ## 長方形を表示する
@@ -28,6 +32,10 @@ local rectangle = display.newRect(100, 200, 40, 30)
 
 上のコードを入力すると `(x=100, y=200)` に `幅40` 、 `高さ30` の長方形が表示されます。
 
+参考
+CoronaSDK Reference[newRect]
+[https://docs.coronalabs.com/api/library/display/newRect](https://docs.coronalabs.com/api/library/display/newRect.html)
+
 ---
 
 ## テキストを表示する
@@ -41,6 +49,11 @@ local textT = display.newText("テキストです", 100, 200, native.systemFont,
 ```
 
 上のコードを入力すると `「テキストです」` が `(x=100, y=200)` に `文字の大きさ16` で表示されます。
+
+参考
+CoronaSDK Reference[newText]
+[https://docs.coronalabs.com/api/library/display/newText](https://docs.coronalabs.com/api/library/display/newText.html)
+
 
 ## テキストを変更する
 
