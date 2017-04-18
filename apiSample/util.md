@@ -24,6 +24,7 @@ display.contentHeight
 display.contentHeightが端末の高さです。
 
 CoronaSDK Reference[contentHeight]
+
 [https://docs.coronalabs.com/api/library/display/contentHeight](https://docs.coronalabs.com/api/library/display/contentHeight.html)
 
 ---
@@ -34,9 +35,13 @@ CoronaSDK Reference[contentHeight]
 
 
 
+
+
 ```
 
-
+参考
+CoronaSDK Reference[newTextBox]
+[https://docs.coronalabs.com/api/library/native/newTextBox](https://docs.coronalabs.com/api/library/native/newTextBox.html)
 
 ---
 
