@@ -61,6 +61,7 @@ CoronaSDK Reference \[setLinearVelocity\]
 
 ---
 
+
 ## セクション中の全文
 
 このセクションで書いたコードの全文は以下になります。
@@ -160,5 +161,5 @@ gameStart()
 
 画面は以下のようになっていれば成功です。
 
-![](./image/execBreakoutSample5.png)
+![](./image/execBreakoutSample4.png)
 
