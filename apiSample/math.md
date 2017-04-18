@@ -67,6 +67,11 @@ math.tan(x)
 
 tanを出します。
 
+参考
+CoronaSDK Reference[math.tan]
+
+[https://docs.coronalabs.com/api/library/math/tan](https://docs.coronalabs.com/api/library/math/tan.html)
+
 - - -
 
 ## pi
@@ -75,3 +80,8 @@ tanを出します。
 math.pi
 ```
 πを出します。
+
+参考
+
+CoronaSDK Reference[math.pi]
+[https://docs.coronalabs.com/api/library/math/pi](https://docs.coronalabs.com/api/library/math/pi.html)
