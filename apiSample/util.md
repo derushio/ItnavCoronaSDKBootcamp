@@ -33,11 +33,12 @@ CoronaSDK Reference[contentHeight]
 
 ``` lua
 
-
-
-
+native.newTextBox( centerX, centerY, width, height )
 
 ```
+
+centerXはx座標の位置を、centerYはY座標の位置を指定でき、
+widthは横幅を、heightは高さを指定できます。
 
 参考
 CoronaSDK Reference[newTextBox]
