@@ -18,7 +18,7 @@ CoronaSDK Reference[physics.addBody]
 
 [https://docs.coronalabs.com/api/library/physics/addBody](https://docs.coronalabs.com/api/library/physics/addBody.html)
 
-- - -
+---
 
 ## 物理エンジンを開始
 
@@ -29,7 +29,7 @@ physics.start()
 
 物理エンジンを開始します。
 
-- - -
+---
 
 ## 重力を設定する
 
@@ -39,7 +39,7 @@ physics.setGravity(x、y)
 
 ディフォルトの `(0, 9.8)` から重力を変える時に使います。
 
-- - -
+---
 
 ## 物理エンジンを一時停止する
 
@@ -47,7 +47,7 @@ physics.setGravity(x、y)
 physics.pause()
 ```
 
-- - -
+---
 
 ## 物理エンジンに入れたオブジェクトを取り除く
 
@@ -55,7 +55,7 @@ physics.pause()
 physics.removeBody(object)
 ```
 
-- - -
+---
 
 ## オブジェクトの速さを設定する
 
@@ -65,7 +65,7 @@ object:setLinearVelocity(x、y)
 
 x軸の速さとy軸の速さをかっこに入れて速さを設定します。
 
-- - -
+---
 
 ## オブジェクトがスクリーンに出るか
 
@@ -75,7 +75,7 @@ rect.isVisible = true
 
 ブーリアンでコントロールします。
 
-- - -
+---
 
 ## 衝突判定
 
