@@ -8,7 +8,11 @@ display.contentWidth
 
 display.contentWidthが端末の幅の長さです。
 
-- - -
+参考
+CoronaSDK Reference　[contentWidth]
+[https://docs.coronalabs.com/api/library/display/contentWidth](https://docs.coronalabs.com/api/library/display/contentWidth.html)
+
+---
 
 ## 端末の高さを取得
 
@@ -18,7 +22,21 @@ display.contentHeight
 
 display.contentHeightが端末の高さです。
 
-- - -
+
+
+---
+
+## テキストボックスを生成する
+
+``` lua
+
+
+
+```
+
+
+
+---
 
 ## 音を再生する
 
