@@ -20,6 +20,7 @@ blocks = {}
 まず、ブロックを配置する関数 `deployBlocks` を宣言しましょう。  
 また、ゲーム開始時にブロックを初期配置しておきたいので、 `deployBlocks()` 読み込み時に実行するように書いておきましょう。
 
+
 ```lua
 function deployBlocks()
 
@@ -87,7 +88,7 @@ end
 ```
 
 ## ブロックを削除する関数を追加しよう
-配置と削除の関数の準備ができたと思います。
+配置と削除、それぞれの関数の準備ができたと思います。
 次に、ブロックを配置する前に全てのブロックを削除する関数`deleteAllBlocks`をdeployBlocksのはじめに実行するようにしましょう。
 
 ```lua
@@ -100,6 +101,52 @@ function deployBlocks()
 ```
 
 ---
+
+## ブロックを２列にしてみよう
+**ブロックを配置しよう**の時点では、ブロックを１列だけ配置しました。
+しかし、1列ではすぐにゲームクリアできてしまいます。
+そこで、配置するブロックを１列から２列にしてみましょう。
+
+``` lua
+
+function deployBlocks()
+    -- ブロックを配置する前に全てのブロックを削除
+    deleteAllBlocks()
+
+    -- 下の１文を追加
+    for y = 0, 1, 1 do
+        for x = 0, 4, 1 do
+            -- 下の1文は以下のように書き換え
+            local index = x + (y * 5)
+            blocks[index] = display.newImageRect(displayGroup,
+                "block.png", width * 1/8, 100)
+            
+            blocks[index].x = (x + 1) * (width * 1/6)
+            -- 下の1文は以下のように書き換え
+            blocks[index].y = 400 + (200 * y)
+            blocks[index].tag = "block"
+            --　以下は "ブロックを配置しよう" と同じ
+            blocks[index].index = index
+            physics.addBody(blocks[index], "static", 
+                {density = 0.0, friction = 0.0, bounce = 1.0})
+
+            -- 現在のブロック数を追加
+            numBlocks = numBlocks + 1
+        end
+    end
+
+    -- 生成したブロック数を保存
+    maxNumBlocks = numBlocks
+end
+
+deployBlocks()
+
+
+```
+
+
+---
+
 
 ## セクション中の全文
 このセクションで書いたコードの全文は以下になります。
@@ -269,4 +316,4 @@ deployBlocks()
 
 画面は以下のようになっていれば成功です。
 
-![](./image/screen.png)
+![](./image/execBreakoutSample5.png)
