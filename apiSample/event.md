@@ -23,6 +23,12 @@ object:addEventListener("touch", onObjectTouch)
 `elseif(event.phase == "moved") then`でタッチし続けた時にこの中の処理（ドラッグ）が実行されます。  
 `elseif(event.phase == "ended") then`でタッチし終わった時にこの中の処理が実行されます。
 
+参考
+CoronaSDK Reference[touch]
+
+[https://docs.coronalabs.com/api/event/touch/index](https://docs.coronalabs.com/api/event/touch/index.html)
+
+
 - - -
 
 ## Tapイベントの使い方
@@ -40,6 +46,12 @@ object:addEventListener("tap", onObjectTap)
 まず `local object = display.newImage("image.png", x座標, y座標)` というコードで `object` という変数名の画像を表示します。  
 その画像にタップイベントをつけるために `onObjectTap` という名前のfunctionを作成します。  
 `object:addEventListener("tap", function名)` で `object` をタップした時にこのfunctionが呼び出され、中の処理が実行されます。  
+
+参考
+CoronaSDK Reference[tap]
+
+[https://docs.coronalabs.com/api/event/tap/index](https://docs.coronalabs.com/api/event/tap/index.html)
+
 
 - - -
 
