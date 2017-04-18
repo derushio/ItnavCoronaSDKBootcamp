@@ -10,6 +10,7 @@ bは15になります。
 
 参考
 CoronaSDK Reference[math.abs]
+
 [https://docs.coronalabs.com/api/library/math/abs](https://docs.coronalabs.com/api/library/math/abs.html)
 
 ---
@@ -35,6 +36,11 @@ math.sin(x)
 ```
 
 -1.0から+1.0までの少数をx(ラジアン)を元に出します。
+
+参考
+CoronaSDK Reference[math.sin]
+
+[https://docs.coronalabs.com/api/library/math/sin](https://docs.coronalabs.com/api/library/math/sin.html)
 
 ---
 
