@@ -53,10 +53,19 @@ CoronaSDK Reference[newTextBox]
 
 ## テキストボックスに入力した内容を表示する
 
-ボタンを押すと、
+下のボタンを押すと、テキストボックスに入力した内容がテキストボックスの上に表示されるプログラムです。
+
+
+``` lua
+
+--テキストボックス"defaultBox"を作成
+
+defaultBox = native.newTextBox( centerX, centerY, width, height )
+
+-- テキストボックスを編集可能にする
+defaultBox.isEditable = true
 
 ```
-
 
 
 
