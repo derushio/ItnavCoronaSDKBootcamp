@@ -22,7 +22,7 @@
     * [コード全体](./composerSample/allCode.md)
   * [API Sample](./apiSample/index.md)
     * [便利系Sample](./apiSample/util.md)
-      * [テキストボックス](apiSample/util/.md)
+      * [テキストボックス](apiSample/util-textbox.md)
     * [画面表示系Sample](./apiSample/display.md)
     * [数学系Sample](./apiSample/math.md)
     * [物理演算Sample](./apiSample/physics.md)
