@@ -47,6 +47,7 @@ isEditableは"false"を入力すると編集できなくなります。
 
 参考
 CoronaSDK Reference[newTextBox]
+
 [https://docs.coronalabs.com/api/library/native/newTextBox](https://docs.coronalabs.com/api/library/native/newTextBox.html)
 
 ---
