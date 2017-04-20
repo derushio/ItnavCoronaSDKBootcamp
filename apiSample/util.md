@@ -44,11 +44,22 @@ centerXはx座標の位置を、centerYはY座標の位置を指定でき、
 widthは横幅を、heightは高さを指定できます。
 isEditableは"false"を入力すると編集できなくなります。
 
+
 参考
 CoronaSDK Reference[newTextBox]
 [https://docs.coronalabs.com/api/library/native/newTextBox](https://docs.coronalabs.com/api/library/native/newTextBox.html)
 
 ---
+
+## テキストボックスに入力した内容を表示する
+
+ボタンを押すと、
+
+```
+
+
+
+
 
 ## 音を再生する
 
