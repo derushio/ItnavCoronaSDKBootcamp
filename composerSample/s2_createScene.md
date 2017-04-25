@@ -110,9 +110,13 @@ end
 -- ########## Sceneメソッド #####################################
 ```
 
+CoronaSDK Reference [gotoScene]
+[https://docs.coronalabs.com/api/library/composer/gotoScene](https://docs.coronalabs.com/api/library/composer/gotoScene.html)
+
+
 Sceneのライフサイクルを定義したコードの下に書いてみましょう。
 
-- - -
+---
 
 ## Sceneのライフサイクルを登録しましょう
 Sceneの仕様上、定義したライフサイクルを登録する必要があります。  
