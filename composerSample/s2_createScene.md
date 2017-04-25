@@ -111,9 +111,11 @@ end
 ```
 
 CoronaSDK Reference [gotoScene]
+
 [https://docs.coronalabs.com/api/library/composer/gotoScene](https://docs.coronalabs.com/api/library/composer/gotoScene.html)
 
 CoronaSDK Reference [performWithDelay]
+
 [https://docs.coronalabs.com/api/library/timer/performWithDelay](https://docs.coronalabs.com/api/library/timer/performWithDelay.html)
 
 
@@ -136,7 +138,7 @@ this:addEventListener("destroy", this)
 
 Sceneのメソッドを定義したコードの下に書いてみましょう。
 
-- - -
+---
 
 ## Sceneをファイルの外に返しましょう
 composerを利用する仕様上、ファイルの外にSceneを返す必要があります。  
@@ -146,7 +148,7 @@ composerを利用する仕様上、ファイルの外にSceneを返す必要が�
 return this
 ```
 
-- - -
+---
 
 ## 今回のセクションまでで書いたコード
 
