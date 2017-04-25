@@ -4,7 +4,7 @@
 ## MainScene.luaを作ろう
 使用しているテキストエディタ、またはファイルエクスプローラーから `MainScene.lua` を作成しましょう。
 
-- - -
+---
 
 ## MainScene.luaをコピペしよう
 以下の内容を作成した `MainScene.lua` にコピペしましょう。
