@@ -113,6 +113,9 @@ end
 CoronaSDK Reference [gotoScene]
 [https://docs.coronalabs.com/api/library/composer/gotoScene](https://docs.coronalabs.com/api/library/composer/gotoScene.html)
 
+CoronaSDK Reference [performWithDelay]
+[https://docs.coronalabs.com/api/library/timer/performWithDelay](https://docs.coronalabs.com/api/library/timer/performWithDelay.html)
+
 
 Sceneのライフサイクルを定義したコードの下に書いてみましょう。
 
