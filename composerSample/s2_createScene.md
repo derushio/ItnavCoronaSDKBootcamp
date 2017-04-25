@@ -15,7 +15,13 @@ this.name = "TopScene"
 
 `TopScene.lua` の一番上に書きましょう。
 
-- - -
+
+CoronaSDK Reference[newScene]
+
+[https://docs.coronalabs.com/api/library/composer/newScene](https://docs.coronalabs.com/api/library/composer/newScene.html)
+
+
+---
 
 ## Sceneライフサイクルを定義しよう
 Sceneにはライフサイクル(Sceneの状態の遷移)があり、Sceneを作る時、削除する時などの挙動を定義する必要があります。  
@@ -68,9 +74,15 @@ end
 -- ########## Sceneライフサイクルメソッド #######################
 ```
 
+CoronaSDK Reference[newRect]
+
+[https://docs.coronalabs.com/api/library/display/newRect](https://docs.coronalabs.com/api/library/display/newRect.html)
+
+
 先程書いたSceneを定義したコードの下に書いてみましょう。
 
-- - -
+
+---
 
 ## Scene内で使うメソッドを定義してみよう
 ライフサイクルメソッド以外にも、Scene内で使いたいメソッドがたくさんあるはずです。  
