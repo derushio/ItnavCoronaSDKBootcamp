@@ -44,7 +44,6 @@ function deployBlocks()
             -- 現在のブロック数を追加
             numBlocks = numBlocks + 1
         end
-    end
 
     -- 生成したブロック数を保存
     maxNumBlocks = numBlocks
