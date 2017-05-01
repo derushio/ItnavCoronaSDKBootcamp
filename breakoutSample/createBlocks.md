@@ -76,14 +76,14 @@ end
 
 function deleteAllBlocks()
 -- for文でブロックを全て削除
-for i = 0, maxNumBlocks, 1 do
-deleteBlock(i)
-end
+    for i = 0, maxNumBlocks, 1 do
+    deleteBlock(i)
+    end
 
--- ブロックを管理している変数を全て初期化する
-maxNumBlocks = 0
-numBlocks = 0
-blocks = {}
+    -- ブロックを管理している変数を全て初期化する
+    maxNumBlocks = 0
+    numBlocks = 0
+    blocks = {}
 end
 ```
 ---
