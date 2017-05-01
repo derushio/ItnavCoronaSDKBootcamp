@@ -56,8 +56,8 @@ ball:addEventListener("collision", ballCollision)
 
 
 ---
-
-
+## セクション中の全文
+このセクションで書いたコードの全文は以下になります。
 
 
 ```lua
