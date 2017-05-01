@@ -57,6 +57,7 @@ deployBlocks()
 ## ブロックを削除する関数を作ろう
 `index(配列の何番目か)` から、ブロックを削除する関数 `deleteBlock` 、
 配置されているブロックを全て削除する関数 `deleteAllBlocks` を宣言します。
+先程書いた`deployBlock`のコードの上に書かなければエラーになってしまいますので、注意してください。
 
 ```lua
 function deleteBlock(index)
@@ -85,6 +86,12 @@ function deleteAllBlocks()
     numBlocks = 0
     blocks = {}
 end
+
+--　必ずdeployBlocks()の前に書いてください
+function deployBlocks()
+
+
+
 ```
 ---
 
