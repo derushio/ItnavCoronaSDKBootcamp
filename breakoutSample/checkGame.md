@@ -1,9 +1,9 @@
-# 9. ゲーム判定を追加しよう
+# 9. Add game judgment
 
-## 変数と関数を準備しよう
-ゲームのクリアとゲームオーバー判定の状態を `completeText` という変数を使ってテキストで表示しようと思います。  
-最初は何も表示したくないので、最初は `completeText` に `nil(空)` を入れておきましょう。  
-`completeGame` や `failGame` が呼ばれたタイミングで生成するようにしましょう。
+## Prepare variables and functions
+I will try to display the state of game clear and game over judgment in text using a variable called STATE `completeText` .  
+At first, I do not want to display anything, so let's put `nil(空)` at `completeText` first .
+Let's generate it at the timing when `completeGame` or `failGame` is called.
 
 ```lua
 completeText = nil
@@ -25,14 +25,14 @@ function failGame()
 end
 ```
 
-参考
+Reference
 CoronaSDK Reference[newText]
 
 [https://docs.coronalabs.com/api/library/display/newText](https://docs.coronalabs.com/api/library/display/newText.html)
 
 ---
 
-## セクション中の全文
+## All code in Chapter
 このセクションで書いたコードの全文は以下になります。
 
 ```lua
