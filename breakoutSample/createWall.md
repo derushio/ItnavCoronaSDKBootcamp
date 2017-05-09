@@ -1,7 +1,7 @@
-# 4. 壁を作ろう
+# 4. Create walls
 
-## 背景を表示しよう
-背景が黒では寂しいので、以下のコードで背景を描画しましょう。
+## Draw background image
+You can draw background by this code.
 
 ```lua
 -- 背景黒では寂しいので、背景を追加しましょう
@@ -10,24 +10,25 @@ background.x = width/2
 background.y = height/2
 ```
 
-参考：CoronaSDK Reference [newImageRect]
+from：CoronaSDK Reference [newImageRect]
 
 [https://docs.coronalabs.com/api/library/display/newImageRect
 ](https://docs.coronalabs.com/api/library/display/newImageRect.html)
 
 ---
 
-## 壁を表示しよう
-ボールが動いた時に跳ね返るように壁を作っておきましょう。  
-壁は四角形を四隅に配置して作ろうと思うので、 `display.newLine(LeftTopのX座標, LeftTopのY座標, RightBottomのX座標, RightBottomのY座標)` という機能を使って壁を作りたいと思います。  
-しかし、4つ作るからといって  
-`walls1 = display.newLine(displayGroup, 0, 0, width, 0)`  
-`walls2 = display.newLine(displayGroup, 0, 0, 0, height)`  
-...  
-とするのはあまり格好良くありません。  
-そこで、テーブルを使ってみましょう。  
-テーブルは `walls = {}` で宣言でき、 `walls[0]`, `walls[1]` のような形でアクセスできます。  
-また、変数の内容を識別しやすいように `tag` にどこの壁なのかを入れておきましょう。  
+## Draw walls
+Create walls for moving ball keep on inside of the display.<br />
+Walls should be 4 sides. it can use `display.newLine(LeftTop X position, LeftTop Y position, RightBottom X position, RightBottom Y position)`<br />
+<br />
+But, 4 walls create by<br />
+`walls1 = display.newLine(displayGroup, 0, 0, width, 0)`<br />
+`walls2 = display.newLine(displayGroup, 0, 0, 0, height)`<br />
+They are bad.<br />
+<br />
+So, You can use table system.<br />
+table is deffined `walls = {}`, you can access variable by `walls[0]`, `walls[1]`.<br />
+and, variable value should be defined `tag` for you understand where block place.<br />
 
 ```lua
 以下のコードを書き、壁を描画してみましょう。 
@@ -46,20 +47,19 @@ walls[4] = display.newLine(displayGroup, 0, height, width, height)
 walls[4].tag = "bottomWall"
 ```
 
-
-
-
-参考
+from<br />
 CoronaSDK Reference [newLine]
 
 [https://docs.coronalabs.com/api/library/display/newLine](https://docs.coronalabs.com/api/library/display/newLine.html)
 
 ---
 
-## for文で壁を一括で設定してみよう
-配列にするとfor文で一括処理をすることができます。
-for文とは、 `for i = 最初の値, 最後の値(含む), 幾つづつiをプラスするか do ~ end` の構文で最初の値から最後の値になるまで `do ~ end` の内容を実行します。
-for文で壁の厚さを変更、物理演算に登録を一括でやってみましょう。  
+## Draw walls draw by `for system`
+If use array, You can draw walls at one time by `for system`.
+`for system` is written `for i = initial value, finish value, what value plus i do ~ end`
+When it is execute between `do ~ end`, i value is from init value to finish value.
+Let's draw walls by `for system`.
+  
 `physics.addBody(登録する物, 種類, オプション)` で物理演算に登録できます。種類は"static"で移動しないオブジェクト、"dynamic"で移動するオブジェクトです。 "kinematic"は"dynamic"と同じようにオブジェクトが動きますが、重力に沿って動く"dynamic"とは違い、"kinematic"は重力とは関係なしに移動します。
 以下のコードを入力してみましょう。
 
