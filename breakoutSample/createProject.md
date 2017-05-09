@@ -1,41 +1,42 @@
-# 1. プロジェクト作成
+# 1. Create project.
 
-## プロジェクト作成
-NEW PROJECTを選びましょう。
+## Create project.
+Click `NEW PROJECT`.
 
 ![](./image/createBreakoutSample1.png)
 
-プロジェクト名に `BreakoutSample` と入力し、Widthを1080、Heightを1920に設定しましょう。
+Set project name `BreakoutSample`, configure Width = 1080, Height = 1920.
 
 ![](./image/createBreakoutSample2.png)
 
-OKを押すと `Open in Editor` と `Show in Finder` が表示されるので、`Show in Finder` をし、 `main.lua` をダブルクリックしてエディターで開きましょう。  
-このとき表示されるフォルダーは閉じないでおくと後が楽です。
+When click next button,  `Open in Editor` and `Show in Finder` are displayed.<br />
+Click `Show in Finder` and double click `main.lua` for open your editor.<br />
+This displayed folder must not close, It will be easy to do.
 
 ![](./image/createBreakoutSample3.png)
 
 - - -
 
-## 画像ファイルを配置しよう
-プロジェクトの中に使う画像ファイルを配置しましょう。  
-今回必要なファイルは[こちら](http://itnav.jp/derushio/BootCamp/bootcamp-image.zip)からダウンロードできます。  
+## Prepare to pic
+Prepare to pic file for project.<br />
+file is [here](http://itnav.jp/derushio/BootCamp/bootcamp-image.zip)
   
-ダウンロードできたファイルを展開して、中身をプロジェクトのフォルダーにコピーしてください。
-以下のようなファイル構成になっていればOKです。
+Unzip file and copy the contents to project folder.<br />
+When your project folder is like this pic.
 
 ![](./image/copyImages.png)
 
 - - -
 
-## プロジェクト作成後
-エディターを開くと以下のような画面が表示されます。  
-この画面の中の `-- Your code here` の末尾から改行してコードを書き始めます。  
-アプリは、英文での命令を順番に書くことで作ることができます。  
-これからこのテキストエディタに命令(コード)をたくさん書いていきます。
+## After create project
+When open, your editor is shown like this pic.<br />
+You can write after `-- Your code here` in this editor.<br />
+App is made by ordered instruction.<br />
+You will write many instruction(code) from now on.
 
 ![](./image/writeBreakoutSample1.png)
 
 - - -
 
-## セクション中の全文
-このセクションではコードを書きません。
+## All code in this chapter
+You don't written code in this chapter.
