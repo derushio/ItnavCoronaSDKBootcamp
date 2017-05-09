@@ -1,9 +1,9 @@
-# 5. ボールを動かそう
+# 5. Move the ball.
 
-## ボールを表示しよう
+## Try to show the ball.
 
-壁と同じようにボールも表示させましょう。  
-以下のコードで表示することができます。
+Let's display the ball as well as the wall.
+You can view the following code.
 
 ```lua
 ball = display.newImageRect(displayGroup, "star.png", 50, 50)
@@ -12,11 +12,11 @@ ball.tag = "ball"
 
 ---
 
-## 物理エンジンにボールを追加しよう
+## Let's add the ball to the physics engine.
 
-表示できたらボールを物理エンジンに追加しましょう。  
-以下のコードで物理エンジンに追加されます。  
-ボールは自由に動きまわるオブジェクトなので、 `"dynamic"` を指定しましょう。
+Once you've shown the ball, let's add it to the physics engine. 
+The following code adds the physical engine.  
+The ball is an object that moves freely, so let's specify ' dynamic '.
 
 ```lua
 physics.addBody(ball, "dynamic", {density = 0.0, friction = 0.0, bounce = 1.0})
@@ -24,11 +24,13 @@ physics.addBody(ball, "dynamic", {density = 0.0, friction = 0.0, bounce = 1.0})
 
 ---
 
-## ボールの位置を初期化する関数を作ろう
+## Let's make a function to initialize the ball position.
 
-物理エンジンに追加できたら、ボールの位置を初期位置に戻す関数 `resetBallPos` を宣言しましょう。  
-`関数` とは、ひとまとまりのプログラムを名前をつけて保存できるシステムです。これが変数として保存されている場合もあります。  
-以下のコードで `resetBallPos` 関数を宣言できます。使う際は `resetBallPos()` で使用することができます。
+Once you have added to the physical engine, declare the function ' resetBallPos ' to restore the position of the ball to its initial position.
+
+A ' function ' is a system that allows you to save a cohesive program with a name.
+This may be stored as a variable.
+You can declare the ' resetBallPos ' function in the following code: You can use ' resetBallPos () ' when using.
 
 ```lua
 function resetBallPos()
@@ -39,11 +41,11 @@ end
 
 ---
 
-## ボールを初期化してゲームを開始する関数を作ろう
+## Let's create a function to initialize the ball and start the game.
 
-ボールを初期位置に戻し、ボールを動かし始める関数 `gameStart` を宣言しましょう。  
-また、ソースコードが読まれたタイミングでゲームを起動しておきたいため、 `gameStart()` を書いておきましょう。  
-以下のコードで `gameStart()` をこのソースコードを読まれたタイミングで実行できます。
+Declare the function ' gameStart ' to return the ball to its initial position and start moving the ball.  
+Also, because you want to start the game when the source code is read, ' gameStart () ' should be written.  
+You can run ' gameStart () ' In the following code when you read this source code:
 
 ```lua
 function gameStart()
@@ -54,7 +56,7 @@ end
 gameStart()
 ```
 
-参考
+reference
 CoronaSDK Reference \[setLinearVelocity\] 
  
 [https://docs.coronalabs.com/api/type/Body/setLinearVelocity](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
@@ -62,9 +64,9 @@ CoronaSDK Reference \[setLinearVelocity\]
 ---
 
 
-## セクション中の全文
+## Full section
 
-このセクションで書いたコードの全文は以下になります。
+The full text of the code written in this section is as follows:
 
 ```lua
 -----------------------------------------------------------------------------------------
@@ -159,7 +161,7 @@ gameStart()
 
 ```
 
-画面は以下のようになっていれば成功です。
+The screen is successful if it looks like the following.
 
 ![](./image/execBreakoutSample4.png)
 
