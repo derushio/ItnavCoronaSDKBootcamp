@@ -1,11 +1,12 @@
-# 6. ブロックを配置してみよう
+# 6. Let's place a block
 
-## 変数のおさらい
-ブロックの数を制御するために、  
-ブロックをいくつ最初に配置したのか管理する変数 `maxNumBlocks`、  
-今ブロックがいくつあるのか管理する変数 `numBlocks` を定義しましょう。  
-最初は一つも置いていないので、 `0` を入れておきましょう。  
-また、ブロックはたくさんあるので配列で管理します。テーブルを宣言しておきましょう。
+## Reviewing variables
+To control the number of blocks
+The variable ' maxnumBlocks ' to manage how many blocks were initially placed
+Now let's define a variable ' numBlocks ' to manage how many blocks there are.  
+Because I do not place one at the beginning, let's put ' 0 '.
+If you use a lot of blocks, You should manage them in an array.
+Let's declare a table.
 
 ```lua
 maxNumBlocks = 0
@@ -16,9 +17,9 @@ blocks = {}
 
 ---
 
-## ブロックを配置しよう
-まず、ブロックを配置する関数 `deployBlocks` を宣言しましょう。  
-また、ゲーム開始時にブロックを初期配置しておきたいので、 `deployBlocks()` 読み込み時に実行するように書いておきましょう。
+## Let's place a block
+First, let's declare a function ' deployBlocks ' to place the blocks.  
+Also, since we want to place the blocks at there initial position, write `deploy Blocks()` to be executed at timing of load.
 
 
 ```lua
@@ -54,10 +55,10 @@ deployBlocks()
 
 ---
 
-## ブロックを削除する関数を作ろう
-`index(配列の何番目か)` から、ブロックを削除する関数 `deleteBlock` 、
-配置されているブロックを全て削除する関数 `deleteAllBlocks` を宣言します。
-先程書いた`deployBlock`のコードの上に書かなければエラーになってしまいますので、注意してください。
+## Let's create a function to delete a block
+' deleteBlock ', the function to remove the block from ' Index (number of array),
+Declares a function ' deleteAllBlocks ' that removes all the blocks that are placed.
+You must write `deleteAllBlocks` above of `deployBlocks`, it will avoid an error.
 
 ```lua
 function deleteBlock(index)
@@ -95,9 +96,9 @@ function deployBlocks()
 ```
 ---
 
-## ブロックを削除する関数を追加しよう
-配置と削除、それぞれの関数の準備ができたと思います。
-次に、ブロックを配置する前に全てのブロックを削除する関数`deleteAllBlocks`をdeployBlocksのはじめに実行するようにしましょう。
+## Let's add a function to remove a block
+Now we are ready to use deleteBlocks(), deployBlocks() each function.
+Next, execute the function  `deleteAllBlocks` at the beginning of `deployBlocks` to remove all blocks before placing the block.
 
 ```lua
 
@@ -110,10 +111,10 @@ function deployBlocks()
 
 ---
 
-## ブロックを２列にしてみよう
-**ブロックを配置しよう**の時点では、ブロックを１列だけ配置しました。
-しかし、1列ではすぐにゲームクリアできてしまいます。
-そこで、配置するブロックを１列から２列にしてみましょう。
+## Let's deploy blocks in two row.
+**ブロックを配置しよう**の時点では、You have placed only one column of blocks.
+But, it will be possible to clear the game as soon as it is.
+Let's try to change block columns  from 1 to 2.
 
 ``` lua
 
@@ -156,7 +157,7 @@ deployBlocks()
 ---
 
 
-## セクション中の全文
+## All code in this chapter
 このセクションで書いたコードの全文は以下になります。
 
 ```lua
