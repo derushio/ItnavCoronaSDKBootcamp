@@ -1,9 +1,9 @@
-# 8. ラケットを動かそう
+# 8. Move the racket.
 
-## ラケットを動かす関数を作ろう
-ラケットを動かすための関数 `moveRacket` を作りましょう。  
-ラケットはy座標を自由に動かせるとブロック崩しとして成り立たなくなるので、x軸だけ移動するような関数を作りましょう。  
-この程度の処理であれば関数化する必要はあまり無いですが、ラケットの移動については拡張する場合があるので念の為に関数化しておきましょう。
+## Let's make a function to move the racket.
+Let's make a function `moveRacket` to move the racket.  
+Let's create a function that will move only on the x axis, since the racket will not hold as a Breakout if you can move the y coordinate freely.
+There is not much need to make it into a function if it is this level of processing, but for racket movement it may be extended, so let's make it functional as a precaution.
 
 ```lua
 function moveRacket(xPosition)
@@ -13,24 +13,24 @@ end
 
 ---
 
-## タッチイベントを設定
-今回はラケットをタッチイベントで動かしましょう。  
-タッチイベントを受け取る関数 `displayTouchListener` を宣言しましょう。  
-この関数を `Runtime:addEventListener("touch", displayTouchListener)` で登録することによって、 `Runtime` は画面全体なので、画面全体のどこかをタッチした瞬間に `displayTouchListener` が呼ばれるようになります。  
-また、 `"touch"` イベントの場合は `タッチを開始した瞬間` `タッチした指を動かした瞬間` `タッチを終えた瞬間` に呼び出されます。  
-ですので、タッチしている間に指の座標が動くと基本的に `displayTouchListener` が呼ばれます。  
-タッチした座標は `event.x, event.y` で取得することができます。
+## Set touch event
+Let's move the racket with a touch event this time.
+Let's declare the function `displayTouchListener` to receive the touch event.  
+By registering this function with `Runtime:addEventListener("touch", displayTouchListener)` ,`Runtime` is the entire screen, `displayTouchListener` so it will be called at the moment you touch somewhere on the whole screen. 
+It `"touch"` is `At the start of touch` `At the start of swipe` `At the end of touch` also called on events.
+So、`displayTouchListener` be called when the finger's coordinates move while touching. 
+Touched coordinates can `event.x, event.y` be acquired with.
 
 ```lua
 function displayTouchListener(event)
    moveRacket(event.x) 
 end
 
--- 画面全体のタッチイベントを設定
+-- Set touch event of whole screen
 Runtime:addEventListener("touch", displayTouchListener)
 ```
 
-参考
+Reference
 CoronaSDK Reference[addEventListener]
 
 [https://docs.coronalabs.com/api/type/EventDispatcher/addEventListener](https://docs.coronalabs.com/api/type/EventDispatcher/addEventListener.html)
@@ -38,8 +38,7 @@ CoronaSDK Reference[addEventListener]
 
 ---
 
-## セクション中の全文
-このセクションで書いたコードの全文は以下になります。
+## All code in Chapter
 
 ```lua
 -----------------------------------------------------------------------------------------
