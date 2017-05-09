@@ -1,10 +1,10 @@
-# 7. ラケットを配置しよう
+# 7. Let's arrange the racket
 
-## ラケットを配置
-今までと同じようにラケットを配置します。  
-`racket:setFillColor(1.0, 1.0, 0.0)` でラケットの色を設定しています。  
-カッコの中は `setFillColor(赤の色の濃さ, 緑の色の濃さ, 青の色の濃さ)` となっております。全ての濃さは `0.0 ~ 1.0` の範囲の少数で表されます。  
-他にも便利な関数や機能があり、[API Sample](./../apiSample/index.md)にまとめてあるので余裕のあるときに読んでみてください。
+## Placement a racket
+I will arrange the racket as before .  
+I set the color of the racket at `racket:setFillColor(1.0, 1.0, 0.0)` .
+In parentheses is `setFillColor(Red concentration, Green concentration, Blue concentration)` . All concentrations are expressed using a small number in the range of  `0.0 ~ 1.0` .  
+There are other useful functions, which are summarized in [API Sample](./../apiSample/index.md), so please read them when you have plenty of room.
 
 ```lua
 racket = display.newRect(displayGroup, width/2, 1700, 200, 20)
@@ -13,14 +13,14 @@ racket:setFillColor(1.0, 1.0, 0.0)
 physics.addBody(racket, "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 ```
 
-参考
+Reference
 CoronaSDK Reference[setFillColor]
 
 [https://docs.coronalabs.com/api/type/ShapeObject/setFillColor](https://docs.coronalabs.com/api/type/ShapeObject/setFillColor.html)
 
 ---
 
-## セクション中の全文
+## All code in Chapter
 このセクションで書いたコードの全文は以下になります。
 
 ```lua
