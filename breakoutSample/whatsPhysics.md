@@ -1,8 +1,8 @@
 # 3. Physics is ...
 
 ## Physics is ...
-CoronaSDK has physics system. (Physics system can emulate of movement bouncing ball and more.)
-You can use physics from this code.
+CoronaSDK's characteristic system is physics engine. (For example physics engine can emulate the movement of a bouncing ball.)
+You can use the physics engine from this code.
 
 ```lua
 -- 物理演算をするための機能を読み込んで `physics` に入れておく
@@ -11,8 +11,7 @@ physics = require("physics")
 physics.start(true)
 physics.setGravity(0, 0)
 ```
-
-now, it is not working. but, it will work hard since next chapter.
+There is no action on the app at this point of coding, but there will be from next chapter.
 
 from
 CoronaSDK Reference [physics]
@@ -60,7 +59,7 @@ physics.setGravity(0, 0)
 
 
 ```
-display is like this pic.<br />
-still same view of prev chapter.
+Display should show the same as the following image.<br />
+Still same view of the previous chapter.
 
 ![](./image/execBreakoutSample2.png)
