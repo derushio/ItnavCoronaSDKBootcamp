@@ -1,42 +1,42 @@
-# 1. Create project.
+# 1. Let's create a project.
 
 ## Create project.
 Click `NEW PROJECT`.
 
 ![](./image/createBreakoutSample1.png)
 
-Set project name `BreakoutSample`, configure Width = 1080, Height = 1920.
+Name the project `BreakoutSample`, set Width = 1080, Height = 1920.(Width and height is in pixels.)
 
 ![](./image/createBreakoutSample2.png)
 
-When click next button,  `Open in Editor` and `Show in Finder` are displayed.<br />
-Click `Show in Finder` and double click `main.lua` for open your editor.<br />
-This displayed folder must not close, It will be easy to do.
+After you click next,  you will see `Open in Editor` and `Show in Finder`.<br />
+Click `Show in Finder` and double click `main.lua` to open with your editor.<br />
+You should keep the folder displayed open. It will make things smooth later.
 
 ![](./image/createBreakoutSample3.png)
 
 - - -
 
-## Prepare to pic
-Prepare to pic file for project.<br />
+## Preparing picture files
+Let's prepare the picture files for the project.<br />
 file is [here](http://itnav.jp/derushio/BootCamp/bootcamp-image.zip)
   
-Unzip file and copy the contents to project folder.<br />
-When your project folder is like this pic.
+Unzip the files and copy the contents to the project folder.<br />
+Your good to go if the file inside looks like the following. 
 
 ![](./image/copyImages.png)
 
 - - -
 
-## After create project
-When open, your editor is shown like this pic.<br />
-You can write after `-- Your code here` in this editor.<br />
-App is made by ordered instruction.<br />
-You will write many instruction(code) from now on.
+## After creating a project
+When you open `main.lua` with your editor, it should show like the image below.<br />
+You can start writing under `-- Your code here`.</br>
+Apps are made by lines of commands in English.</br>
+You will write various commands(code) from now on.
 
 ![](./image/writeBreakoutSample1.png)
 
 - - -
 
 ## All code in this chapter
-You don't written code in this chapter.
+No code written in this chapter.
