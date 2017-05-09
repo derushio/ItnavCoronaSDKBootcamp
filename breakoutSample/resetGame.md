@@ -1,9 +1,9 @@
-# 11. ゲームをリセット
+# 11. Reset the game
 
-## ゲームをリセットする関数を追加する
-ゲームをリセットするための関数 `resetGame` を追加します。    
-内容は、 `resetGame` に設定されているイベントリスナを解除し、結果を通知しているテキストを削除し、物理演算を再開し、ブロック、ボールを初期配置にもどして、ゲームをスタートします。  
-これを追加しただけでは、ゲームをリトライすることはできません。
+## Add a function to reset the game
+Add the function `resetGame` to reset the game.   
+Contents, cancel the event listener set in `resetGame` , delete the text notifying the result, restart the physical operation, return the block, the ball to the initial placement, start the game.  
+Just by adding this, you can't retry the game .
 
 ```lua
 function resetGame()
@@ -22,8 +22,8 @@ end
 
 ---
 
-## ゲームのリセット関数を有効にする
-以前[9. ゲーム判定を追加しよう](./checkGame.md)で追加したコードのうち、コメントアウトされていた `Runtime:addEventListener("tap", resetGame)` を有効化することで、ゲームのリトライを有効にすることができる。
+## Enable game reset function
+By activate `Runtime:addEventListener("tap", resetGame)` which was previously commented out among the codes added in [9. ゲーム判定を追加しよう](./checkGame.md) in the past, it is possible to make the retry of the game effective.
 
 ```lua
 function completeGame()
@@ -45,7 +45,7 @@ end
 
 ---
 
-## セクション中の全文
+## All code in Chapter
 このセクションで書いたコードの全文は以下になります。
 
 ** この変更は[9. ゲーム判定を追加しよう](./checkGame.md)の部分の上書きです **
