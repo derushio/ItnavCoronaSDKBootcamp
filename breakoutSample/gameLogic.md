@@ -1,14 +1,14 @@
-# 10. ゲームロジックを作ろう
+# 10. Let's make game logic
 
-## ボールの挙動を安定させよう
-現在のプログラムだと、ボールが壁に跳ねるものの、少々怪しい動きをしている。  
-これが良いとされる場合もあるが、今回は敢えて挙動を安定させよう。  
-`ballStabilization` という関数を宣言し、この関数が実行されたタイミングでこのボールが向かっている方向への速度を安定化し、ついでにボールを回転させてみよう。
+## Let's stabilize the behavior of the ball
+In the current program, although the ball bounces on the wall, there is a slight suspicious movement.  
+In some cases this is say to be good, but let's dare to stabilize the behavior this time. 
+Declare a function called `ballStabilization`, stabilize the speed in the direction that this ball is heading at the time when this function is executed, and let's rotate the ball at the same time.
 
 ```lua
 
 function ballStabilization()
-    -- 速度を取得して、x,yの速度を500に固定する
+    -- Acquire the speed and fix the speed of x, y to 500
     local vx, vy = ball:getLinearVelocity()
 
     if (0 < vx) then
@@ -23,9 +23,9 @@ function ballStabilization()
         vy = -500
     end
 
-    -- 速度を安定させる
+    -- Stabilize the speed
     ball:setLinearVelocity(vx, vy)
-    -- 回転させる
+    -- To rotate
     ball:applyTorque(90)
 end
 
@@ -35,11 +35,11 @@ function ballCollision(event)
     elseif (event.phase == "ended") then
         ballStabilization()
 
-        -- ブロックに当たった時はブロックを削除
+        -- Delete block when hitting block
         if (event.other.tag == "block") then
             local hitBlock = event.other
             deleteBlock(hitBlock.index)
-            -- ブロックがなくなった場合はクリア判定
+            -- Clear judgment when there is no block
             if (numBlocks == 0) then
                 completeGame()
             end
@@ -49,14 +49,14 @@ function ballCollision(event)
     end
 end
 
--- 衝突イベントをボールに設定
+-- Set crash event to ball
 ball:addEventListener("collision", ballCollision)
 
 ```
 
 
 ---
-## セクション中の全文
+## All code in Chapter
 このセクションで書いたコードの全文は以下になります。
 
 
