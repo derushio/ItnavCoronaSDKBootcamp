@@ -80,7 +80,7 @@ displayGroup = display.newGroup()
 
 ```
 
-If your display shows like the following image, it is a success.<br />
+Your successful if the display shows like the following image.<br />
 
 ![](./image/execBreakoutSample1.png)
 
