@@ -64,9 +64,9 @@ CoronaSDK Reference \[setLinearVelocity\]
 ---
 
 
-## Full section
+## All code in this chapter
 
-The full text of the code written in this section is as follows:
+このセクションで書いたコードの全文は以下になります。
 
 ```lua
 -----------------------------------------------------------------------------------------
@@ -161,7 +161,7 @@ gameStart()
 
 ```
 
-The screen is successful if it looks like the following.
+画面は以下のようになっていれば成功です。
 
 ![](./image/execBreakoutSample4.png)
 
