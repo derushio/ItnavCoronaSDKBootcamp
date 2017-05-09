@@ -1,7 +1,7 @@
 # 4. Create walls
 
 ## Draw background image
-You can draw background by this code.
+You can draw the background by this code.
 
 ```lua
 -- 背景黒では寂しいので、背景を追加しましょう
@@ -18,17 +18,18 @@ from：CoronaSDK Reference [newImageRect]
 ---
 
 ## Draw walls
-Create walls for moving ball keep on inside of the display.<br />
-Walls should be 4 sides. it can use `display.newLine(LeftTop X position, LeftTop Y position, RightBottom X position, RightBottom Y position)`<br />
+Let's create walls so the moving ball will bounce inside of the display.<br />
+Walls should have 4 sides. You can create each of them by using `display.newLine(LeftTop's X coordinate, LeftTop's Y coordinate, RightBottom's X coordinate, RightBottom's Y coordinate)`<br />
 <br />
-But, 4 walls create by<br />
+However, 4 walls created like<br />
 `walls1 = display.newLine(displayGroup, 0, 0, width, 0)`<br />
 `walls2 = display.newLine(displayGroup, 0, 0, 0, height)`<br />
-They are bad.<br />
+...<br />
+doesn't look neat.<br />
 <br />
-So, You can use table system.<br />
-table is deffined `walls = {}`, you can access variable by `walls[0]`, `walls[1]`.<br />
-and, variable value should be defined `tag` for you understand where block place.<br />
+So, let's try using a table system.<br />
+Table is defined `walls = {}`, and you can access variable by `walls[0]`, `walls[1]`.<br />
+Also, variable value should be defined as `tag`. It will make it easier for you to recognize which wall by tagging them.<br />
 
 ```lua
 以下のコードを書き、壁を描画してみましょう。 
@@ -54,13 +55,13 @@ CoronaSDK Reference [newLine]
 
 ---
 
-## Draw walls draw by `for system`
-If use array, You can draw walls at one time by `for system`.
-`for system` is written `for i = initial value, finish value, what value plus i do ~ end`
-When it is execute between `do ~ end`, i value is from init value to finish value.
-Let's draw walls by `for system`.
+## Setting the walls in a lump by using `for statement`
+You can batch process an array by using `for statement`.
+`for statement` is written `for i = initial value, last value, How many i are added each time do ~ end`.
+Each time the i value get's added up towords the last value, inside of `do ~ end` will be continuously executed. It will stop when it hits the last value.
+Let's create walls by `for statement`.
   
-`physics.addBody(登録する物, 種類, オプション)` で物理演算に登録できます。種類は"static"で移動しないオブジェクト、"dynamic"で移動するオブジェクトです。 "kinematic"は"dynamic"と同じようにオブジェクトが動きますが、重力に沿って動く"dynamic"とは違い、"kinematic"は重力とは関係なしに移動します。
+By using `physics.addBody(what you are registering, type, option)` you can register to the physics system. The types are "static" objects that don't move, and "dynamic" objects that do move. Objects moves with "kinematic" as well, but since objects moves along gravity with "dynamic", objects moves without relation to gravity with "kinematic".
 以下のコードを入力してみましょう。
 
 ```lua
@@ -81,8 +82,8 @@ CoronaSDK Reference[addBody]
 
 ---
 
-## セクション中の全文
-このセクションで書いたコードの全文は以下になります。
+## All code in this chapter
+All code in this chapter
 
 ```lua
 -----------------------------------------------------------------------------------------
@@ -155,6 +156,6 @@ end
 
 
 ```
-画面は以下のようになっていれば成功です。
+Your successful if the display shows like the following image.
 
 ![](./image/execBreakoutSample3.png)
