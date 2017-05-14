@@ -1,4 +1,4 @@
-# 9. Let's add judgments for game clear and game over
+# 9. Let's add judgments and game results
 
 ## Prepare variables and functions
 By using variable `completeText`, let's display the status of game clear and game over with text.
