@@ -44,7 +44,7 @@ end
 ## Create a function to initialize the ball and start the game.
 
 Declare the function ' gameStart ' to set the ball to its initial position and then start moving the ball.  
-Also, because you want to start the game when the source code is read, ' gameStart () ' should be written.  
+Also, because you want to start the game when the source code is read, ' gameStart() ' should be written.  
 You can run ' gameStart() ' by the following code when the source code is read.
 
 ```lua
