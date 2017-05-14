@@ -1,9 +1,9 @@
-# 8. Move the racket.
+# 8. Let's move the racket.
 
-## Let's make a function to move the racket.
+## Make a function to move the racket.
 Let's make a function `moveRacket` to move the racket.  
-Let's create a function that will move only on the x axis, since the racket will not hold as a Breakout if you can move the y coordinate freely.
-There is not much need to make it into a function if it is this level of processing, but for racket movement it may be extended, so let's make it functional as a precaution.
+Let's create a function that will only move on the x axis, since if the racket can move on the y axis freely it does not hold as a Breakout.
+There is not much need to make it into a function if it is this level of processing, but the racket movement may be extended, so let's make it as a function just in case.
 
 ```lua
 function moveRacket(xPosition)
@@ -13,13 +13,13 @@ end
 
 ---
 
-## Set touch event
-Let's move the racket with a touch event this time.
-Let's declare the function `displayTouchListener` to receive the touch event.  
-By registering this function with `Runtime:addEventListener("touch", displayTouchListener)` ,`Runtime` is the entire screen, `displayTouchListener` so it will be called at the moment you touch somewhere on the whole screen. 
-It `"touch"` is `At the start of touch` `At the start of swipe` `At the end of touch` also called on events.
-So、`displayTouchListener` be called when the finger's coordinates move while touching. 
-Touched coordinates can `event.x, event.y` be acquired with.
+## Set touch event.
+This time we will make the racket move with a touch event.
+Declare the function `displayTouchListener` to receive the touch event.  
+By registering this function with `Runtime:addEventListener("touch" displayTouchListener)` ,`Runtime` is the entire screen, so `displayTouchListener` will be called at the moment you touch somewhere on the screen. 
+Also, the case of the `"touch"` event, it will be called `At the start of touch` `At the start of swipe` `At the end of touch`.
+So basically during you are touching the screen, if your finger coordinate moves `displayTouchListener` will be called.
+You can get the coordinate you touched by `event.x, event.y`.
 
 ```lua
 function displayTouchListener(event)
@@ -38,7 +38,8 @@ CoronaSDK Reference[addEventListener]
 
 ---
 
-## All code in Chapter
+## All code in this chapter
+All code in this chapter
 
 ```lua
 -----------------------------------------------------------------------------------------
@@ -231,7 +232,7 @@ Runtime:addEventListener("touch", displayTouchListener)
 
 
 ```
-画面は以下のようになっていれば成功です。  
-ラケットが動くようになります。
+It's a success if the display looks like the following image. 
+The racket will move.
 
 ![](./image/execBreakoutSample7.png)
