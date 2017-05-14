@@ -1,9 +1,9 @@
-# 9. Add game judgment
+# 9. Let's add judgments for game clear and game over
 
 ## Prepare variables and functions
-I will try to display the state of game clear and game over judgment in text using a variable called STATE `completeText` .  
-At first, I do not want to display anything, so let's put `nil(空)` at `completeText` first .
-Let's generate it at the timing when `completeGame` or `failGame` is called.
+By using variable `completeText`, we will display the state of game clear and game over by text.
+We do not want to display anything in the beginning, so put `nil` meaning empty in `completeText`.
+Code so it will be generated at the timing of function `completeGame` and `failGame` is called.
 
 ```lua
 completeText = nil
@@ -32,8 +32,8 @@ CoronaSDK Reference[newText]
 
 ---
 
-## All code in Chapter
-このセクションで書いたコードの全文は以下になります。
+## All code in this chapter
+All code in this chapter
 
 ```lua
 ```lua
@@ -252,7 +252,7 @@ end
 
 ```
 
-画面は以下のようになっていれば成功です。  
-前のセクションと同じ画面です。
+Looks the same as the previous chapter?
+You are all good!
 
 ![](./image/execBreakoutSample8.png)
