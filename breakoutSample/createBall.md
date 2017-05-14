@@ -1,9 +1,9 @@
-# 5. Move the ball.
+# 5. Let's try moving the ball.
 
-## Try to show the ball.
+## Display the ball.
 
 Let's display the ball as well as the wall.
-You can view the following code.
+You can display it by the following code.
 
 ```lua
 ball = display.newImageRect(displayGroup, "star.png", 50, 50)
@@ -12,11 +12,11 @@ ball.tag = "ball"
 
 ---
 
-## Let's add the ball to the physics engine.
+## Add the ball to the physics engine.
 
-Once you've shown the ball, let's add it to the physics engine. 
-The following code adds the physical engine.  
-The ball is an object that moves freely, so let's specify ' dynamic '.
+Once you have displayed the ball, let's add it to the physics engine. 
+The following code adds it to the physics engine.
+The ball is an object that moves freely, so let's assign ' dynamic '.
 
 ```lua
 physics.addBody(ball, "dynamic", {density = 0.0, friction = 0.0, bounce = 1.0})
@@ -24,13 +24,13 @@ physics.addBody(ball, "dynamic", {density = 0.0, friction = 0.0, bounce = 1.0})
 
 ---
 
-## Let's make a function to initialize the ball position.
+## Make a function to initialize the ball position.
 
 Once you have added to the physical engine, declare the function ' resetBallPos ' to restore the position of the ball to its initial position.
 
-A ' function ' is a system that allows you to save a cohesive program with a name.
+A ' function ' is a system that allows you to name and save programs as a bundle.
 This may be stored as a variable.
-You can declare the ' resetBallPos ' function in the following code: You can use ' resetBallPos () ' when using.
+You can declare the ' resetBallPos ' function with the following code. Write ' resetBallPos() ' when using.
 
 ```lua
 function resetBallPos()
@@ -41,11 +41,11 @@ end
 
 ---
 
-## Let's create a function to initialize the ball and start the game.
+## Create a function to initialize the ball and start the game.
 
-Declare the function ' gameStart ' to return the ball to its initial position and start moving the ball.  
+Declare the function ' gameStart ' to set the ball to its initial position and then start moving the ball.  
 Also, because you want to start the game when the source code is read, ' gameStart () ' should be written.  
-You can run ' gameStart () ' In the following code when you read this source code:
+You can run ' gameStart() ' by the following code when the source code is read.
 
 ```lua
 function gameStart()
@@ -65,8 +65,7 @@ CoronaSDK Reference \[setLinearVelocity\]
 
 
 ## All code in this chapter
-
-このセクションで書いたコードの全文は以下になります。
+All code in this chapter
 
 ```lua
 -----------------------------------------------------------------------------------------
@@ -161,7 +160,7 @@ gameStart()
 
 ```
 
-画面は以下のようになっていれば成功です。
+Your successful if the display shows like the following image.
 
 ![](./image/execBreakoutSample4.png)
 
