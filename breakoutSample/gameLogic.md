@@ -1,9 +1,9 @@
-# 10. Let's make game logic
+# 10. Let's make a game logic
 
-## Let's stabilize the behavior of the ball
-In the current program, although the ball bounces on the wall, there is a slight suspicious movement.  
-In some cases this is say to be good, but let's dare to stabilize the behavior this time. 
-Declare a function called `ballStabilization`, stabilize the speed in the direction that this ball is heading at the time when this function is executed, and let's rotate the ball at the same time.
+## Stabilize the behavior of the ball
+The current program, although the ball bounces on the wall, there is a slight suspicious movement.  
+In some cases this is good, but let's stabilize the behavior this time. 
+Declare a function `ballStabilization`, stabilize the speed in the direction that this ball is heading at the time when this function is executed, and let's rotate the ball at the same time.
 
 ```lua
 
@@ -56,8 +56,8 @@ ball:addEventListener("collision", ballCollision)
 
 
 ---
-## All code in Chapter
-このセクションで書いたコードの全文は以下になります。
+## All code in this chapter
+All code in this chapter
 
 
 ```lua
@@ -329,8 +329,8 @@ ball:addEventListener("collision", ballCollision)
 
 ```
 
-画面は以下のようになっていれば成功です。  
-ボールがしっかりバウンドと回転をするようになり、ブロックも消えるようになります。  
-ゲームクリアやゲームオーバーも表示されるようになり、だいぶゲームらしくなりました。
+It's a success if the display looks like the following image.
+The ball will properly bounce and rotate. Also, the blocks will disappear when it contacts with the ball.
+Game clear and game over are also displayed, and it seem to be much like a game. 
 
 ![](./image/execBreakoutSample9.png)
