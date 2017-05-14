@@ -1,10 +1,10 @@
-# 7. Let's arrange the racket
+# 7. Let's place the racket
 
-## Placement a racket
-I will arrange the racket as before .  
-I set the color of the racket at `racket:setFillColor(1.0, 1.0, 0.0)` .
-In parentheses is `setFillColor(Red concentration, Green concentration, Blue concentration)` . All concentrations are expressed using a small number in the range of  `0.0 ~ 1.0` .  
-There are other useful functions, which are summarized in [API Sample](./../apiSample/index.md), so please read them when you have plenty of room.
+## Place the racket
+We will  be placing the racket in the same way as before.  
+The racket color is set by `racket:setFillColor(1.0, 1.0, 0.0)`.
+Inside the brackets are `setFillColor(strength of red, strength of green, strength of blue)`. The strength of RGB are expressed using a small number in the range of  `0.0 ~ 1.0` .  
+There are also other useful functions, which are summarized in [API Sample](./../apiSample/index.md), so try reading them when you have time.
 
 ```lua
 racket = display.newRect(displayGroup, width/2, 1700, 200, 20)
@@ -20,8 +20,8 @@ CoronaSDK Reference[setFillColor]
 
 ---
 
-## All code in Chapter
-このセクションで書いたコードの全文は以下になります。
+## All code in this chapter
+All code in this chapter
 
 ```lua
 -----------------------------------------------------------------------------------------
@@ -198,6 +198,6 @@ physics.addBody(racket, "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 
 ```
 
-画面は以下のようになっていれば成功です。
+It's a success if the display looks like the following image.
 
 ![](./image/execBreakoutSample6.png)
