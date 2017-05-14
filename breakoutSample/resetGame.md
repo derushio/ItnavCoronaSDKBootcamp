@@ -2,8 +2,8 @@
 
 ## Add a function to reset the game
 Add the function `resetGame` to reset the game.   
-Contents, cancel the event listener set in `resetGame` , delete the text notifying the result, restart the physical operation, return the block, the ball to the initial placement, start the game.  
-Just by adding this, you can't retry the game .
+This includes canceling the event listener set to `resetGame`, deleting the text notifying the result, restarting the physics engine, resetting the blocks and ball to their initial position, and starting the game.  
+But, just by adding this will not make you retry the game.
 
 ```lua
 function resetGame()
@@ -22,8 +22,8 @@ end
 
 ---
 
-## Enable game reset function
-By activate `Runtime:addEventListener("tap", resetGame)` which was previously commented out among the codes added in [9. ゲーム判定を追加しよう](./checkGame.md) in the past, it is possible to make the retry of the game effective.
+## Enable the game reset function
+By activating `Runtime:addEventListener("tap", resetGame)` which was previously commented out among the codes added in [9. Let's add judgments and game results](./checkGame.md), it will enable you to retry the game. Erase ` -- ` to make the code affective.
 
 ```lua
 function completeGame()
@@ -45,10 +45,10 @@ end
 
 ---
 
-## All code in Chapter
-このセクションで書いたコードの全文は以下になります。
+## All code in this chapter
+All code in this chapter
 
-** この変更は[9. ゲーム判定を追加しよう](./checkGame.md)の部分の上書きです **
+** This changement is overwriting the section of[9. Let's add judgments and game results](./checkGame.md) **
 
 ```lua
 function completeGame()
@@ -68,7 +68,7 @@ function failGame()
 end
 ```
 
-** この変更は新規作成部分です **
+** This changement is newly created **
 
 ```lua
 -----------------------------------------------------------------------------------------
@@ -356,7 +356,7 @@ end
 ```
 
 
-画面は以下のようになっていれば成功です。  
-ゲームオーバーかゲームクリア後に画面をタップすればリトライできるようになります。
+It's a success if the display looks like the following image.
+By tapping the display after you clear or gameover, you will be able to retry the game. 
 
 ![](./image/execBreakoutSample10.png)
