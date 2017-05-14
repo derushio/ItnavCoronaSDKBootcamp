@@ -1,44 +1,44 @@
-# Breakout code as a whole
+# The whole code for Breakout
 
 ```lua
 -----------------------------------------------------------------------------------------
 --
--- Let's make Breakout game
+-- Let's make Breakout
 -- main.lua
 --
 -----------------------------------------------------------------------------------------
 
 
 
--- ############################## What is a variable? ##############################
+-- ############################## What is variable? ##############################
 
--- `width` contains the horizontal width (1080) of the screen
+-- `width` contains the width(1080) of the display
 width = display.contentWidth
--- `height` contains the height(1920) of the screen
+-- `height` contains the height(1920) of the display
 height = display.contentHeight
 
--- Drawing group
+-- display group(necassary to draw the display with coronaSDK)
 displayGroup = display.newGroup()
 
--- ############################## What is a variable? ##############################
+-- ############################## What is variable? ##############################
 
 
 
--- ############################## What is a physics? ##############################
+-- ############################## physics is ... ##############################
 
--- Load the function for physics and put it in the `physics` .
+-- Load the function to use the physics engine and put it in `physics` .
 physics = require("physics")
--- Activate physics
+-- Activate physics engine
 physics.start(true)
 physics.setGravity(0, 0)
 
--- ############################## What is a physics? ##############################
+-- ############################## physics is ... ##############################
 
 
 
--- ############################## Let's make walls ##############################
+-- ############################## Create walls ##############################
 
--- Black back is lonesome, so let's add a background
+-- A black color background is lonesome, so let's add a image to the background
 background = display.newImageRect(displayGroup, "bg_space.png", width, height)
 background.x = width/2
 background.y = height/2
@@ -57,20 +57,20 @@ walls[3].tag = "rightWall"
 walls[4] = display.newLine(displayGroup, 0, height, width, height)
 walls[4].tag = "bottomWall"
 
--- for i = First value, Last value(Include), How many i will be added do ~ end
+-- for i = initial value, end value(is included), How many i are added each time do ~ end
 -- `#` is the number of elements
 for i = 1, #walls, 1 do
-    -- Change wall thickness
+    -- Change the wall thickness
     walls[i].strokeWidth = 50
-    -- `physics.addBody(bodys to be Registered, types, option)` Register for physical calculation
+    -- `physics.addBody(what you are registering, type, option)` Register to the  physics system
     physics.addBody(walls[i], "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 end
 
--- ############################## Let's make walls ##############################
+-- ############################## Create walls ##############################
 
 
 
--- ############################## Let's move the ball ##############################
+-- ############################## Let's try moving the ball ##############################
 
 ball = display.newImageRect(displayGroup, "star.png", 50, 50)
 ball.tag = "ball"
@@ -88,11 +88,11 @@ end
 
 gameStart()
 
--- ############################## Let's move the ball ##############################
+-- ############################## Let's try moving the ball ##############################
 
 
 
--- ############################## Let's place blocks ##############################
+-- ############################## Let's deploy blocks ##############################
 
 maxNumBlocks = 0
 numBlocks = 0
@@ -100,17 +100,17 @@ numBlocks = 0
 blocks = {}
 
 function deleteBlock(index)
-    -- Ignore when there is no block
+    -- Ignore when there are no blocks
     if (blocks[index] == nil) then
-        -- return is an instruction to terminate the function here
+        -- return is an command to stop the function here
         return
     end
 
-    -- removeSelf() is a function to delete myself from the screen
+    -- removeSelf() is a function to delete itself from the screen
     blocks[index]:removeSelf()
-    -- Since it is not displayed anymore, assign nil which means nothing
+    -- Since it is not displayed anymore, assign nil which means empty
     blocks[index] = nil
-    -- I deleted one block, so let's set `numBlocks` to `-1` .
+    -- We deleted one block, so let's set `numBlocks` to `-1` .
     numBlocks = numBlocks - 1
 end
 
@@ -120,35 +120,35 @@ function deleteAllBlocks()
         deleteBlock(i)
     end
 
-    -- Initialize all variables managing the block
+    -- Initialize all variables managing the blocks
     maxNumBlocks = 0
     numBlocks = 0
     blocks = {}
 end
 
 function deployBlocks()
-    -- Delete all blocks before placing blocks
+    -- Delete all blocks before deploying blocks
     deleteAllBlocks()
 
-    -- Place blocks
+    -- Deploy blocks
     for y = 0, 1, 1 do
         for x = 0, 4, 1 do
-            -- What number of element
+            -- Which element
             local index = x + (y * 5)
             blocks[index] = display.newImageRect(displayGroup,
                 "block.png", width * 1/8, 100)
-            -- (width * 1/6) => Divide the screen into six , Since the two are both ends, four can actually be used
-            -- (x + 1) => What number out of the four you divided . 0 is the edge of the screen , +1 and ignore it
+            -- (width * 1/6) => Divide the screen into six , since two are both ends, four can actually be used
+            -- (x + 1) => Which one of the four you divided . 0 is the edge of the screen , so +1 and ignore it
             blocks[index].x = (x + 1) * (width * 1/6)
             -- It will be y=0 => 400, y=1 => 600 
             blocks[index].y = 400 + (200 * y)
             blocks[index].tag = "block"
-            -- Include the generated order for easy identification later
+            -- Include the generated order for easy identification later on
             blocks[index].index = index
             physics.addBody(blocks[index], "static", 
                 {density = 0.0, friction = 0.0, bounce = 1.0})
 
-            -- Add current block number
+            -- Add the current number of blocks
             numBlocks = numBlocks + 1
         end
     end
@@ -159,22 +159,22 @@ end
 
 deployBlocks()
 
--- ############################## Let's place blocks ##############################
+-- ############################## Let's deploy blocks ##############################
 
 
 
--- ############################## Let's arrange a racket ##############################
+-- ############################## Let's arrange the racket ##############################
 
 racket = display.newRect(displayGroup, width/2, 1700, 200, 20)
 racket.tag = "racket"
 racket:setFillColor(1.0, 1.0, 0.0)
 physics.addBody(racket, "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 
--- ############################## Let's arrange a racket ##############################
+-- ############################## Let's arrange the racket ##############################
 
 
 
--- ############################## Let's move the racket ##############################
+-- ############################## Let's try moving the racket ##############################
 
 function moveRacket(xPosition)
     racket.x = xPosition
@@ -184,14 +184,14 @@ function displayTouchListener(event)
    moveRacket(event.x) 
 end
 
--- Set touch event of whole screen
+-- Set touch event of the whole screen
 Runtime:addEventListener("touch", displayTouchListener)
 
--- ############################## Let's move the racket ##############################
+-- ############################## Let's try moving the racket ##############################
 
 
 
--- ############################## Let's add game judgment ##############################
+-- ############################## Let's add judgments and game results ##############################
 
 completeText = nil
 
@@ -211,14 +211,14 @@ function failGame()
     Runtime:addEventListener("tap", resetGame)
 end
 
--- ############################## Let's add game judgment ##############################
+-- ############################## Let's add judgments and game results ##############################
 
 
 
--- ############################## Let's make game logic ##############################
+-- ############################## Let's make the game logic ##############################
 
 function ballStabilization()
-    -- Acquire the speed and fix the speed of x, y to 500
+    -- Get the speed and fix the speed of x, y to 500
     local vx, vy = ball:getLinearVelocity()
         
     if (0 < vx) then
@@ -235,7 +235,7 @@ function ballStabilization()
     
     -- Stabilize the speed
     ball:setLinearVelocity(vx, vy)
-    -- To rotate
+    -- Make it rotate
     ball:applyTorque(90)
 end
 
@@ -245,7 +245,7 @@ function ballCollision(event)
     elseif (event.phase == "ended") then
         ballStabilization()
 
-        -- Delete block when hitting block
+        -- Delete block when contact
         if (event.other.tag == "block") then
             local hitBlock = event.other
             deleteBlock(hitBlock.index)
@@ -259,10 +259,10 @@ function ballCollision(event)
     end
 end
 
--- et crash event to ball
+-- Set crash event to ball
 ball:addEventListener("collision", ballCollision)
 
--- ############################## Let's make game logic ##############################
+-- ############################## Let's make the game logic ##############################
 
 
 
