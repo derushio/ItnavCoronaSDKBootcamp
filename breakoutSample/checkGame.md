@@ -1,7 +1,7 @@
 # 9. Let's add judgments for game clear and game over
 
 ## Prepare variables and functions
-By using variable `completeText`, we will display the state of game clear and game over by text.
+By using variable `completeText`, let's display the status of game clear and game over with text.
 We do not want to display anything in the beginning, so put `nil` meaning empty in `completeText`.
 Code so it will be generated at the timing of function `completeGame` and `failGame` is called.
 
