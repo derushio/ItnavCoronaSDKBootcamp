@@ -1,4 +1,4 @@
-# 10. Let's make a game logic
+# 10. Let's make the game logic
 
 ## Stabilize the behavior of the ball
 The current program, although the ball bounces on the wall, there is a slight suspicious movement.  

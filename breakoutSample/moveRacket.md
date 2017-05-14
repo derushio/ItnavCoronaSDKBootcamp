@@ -1,6 +1,6 @@
-# 8. Let's move the racket.
+# 8. Let's try moving the racket
 
-## Make a function to move the racket.
+## Make a function to move the racket
 Let's make a function `moveRacket` to move the racket.  
 Let's create a function that will only move on the x axis, since if the racket can move on the y axis freely it does not hold as a Breakout.
 There is not much need to make it into a function if it is this level of processing, but the racket movement may be extended, so let's make it as a function just in case.
@@ -13,7 +13,7 @@ end
 
 ---
 
-## Set touch event.
+## Set touch event
 This time we will make the racket move with a touch event.
 Declare the function `displayTouchListener` to receive the touch event.  
 By registering this function with `Runtime:addEventListener("touch" displayTouchListener)` ,`Runtime` is the entire screen, so `displayTouchListener` will be called at the moment you touch somewhere on the screen. 
