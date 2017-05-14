@@ -1,10 +1,10 @@
-# 6. Let's place a block
+# 6. Let's deploy blocks
 
-## Reviewing variables
-To control the number of blocks
-The variable ' maxnumBlocks ' to manage how many blocks were initially placed
-Now let's define a variable ' numBlocks ' to manage how many blocks there are.  
-Because I do not place one at the beginning, let's put ' 0 '.
+## review variable
+To control the number of blocks,
+let's define variable ' maxnumBlocks ' to manage how many blocks are initially deployed and
+variable ' numBlocks ' to manage how many blocks we currently have.
+We have none at this point so let's add ' 0 '.
 If you use a lot of blocks, You should manage them in an array.
 Let's declare a table.
 
@@ -17,9 +17,9 @@ blocks = {}
 
 ---
 
-## Let's place a block
+## deploy blocks
 First, let's declare a function ' deployBlocks ' to place the blocks.  
-Also, since we want to place the blocks at there initial position, write `deploy Blocks()` to be executed at timing of load.
+Also, since we want to deploy the blocks at there initial position at the beginning of the game, write so that it will be executed at timing of `deployBlocks()` is loaded.
 
 
 ```lua
@@ -55,10 +55,9 @@ deployBlocks()
 
 ---
 
-## Let's create a function to delete a block
-' deleteBlock ', the function to remove the block from ' Index (number of array),
-Declares a function ' deleteAllBlocks ' that removes all the blocks that are placed.
-You must write `deleteAllBlocks` above of `deployBlocks`, it will avoid an error.
+## create a function to delete blocks
+Let's declare ' deleteBlock ', the function to remove the block from ' index (which one in the array). Also declare ' deleteAllBlocks ' which removes all the blocks that are deployed.
+You must write them above the code of `deployBlocks`, unless it will cause an error.
 
 ```lua
 function deleteBlock(index)
@@ -96,9 +95,9 @@ function deployBlocks()
 ```
 ---
 
-## Let's add a function to remove a block
-Now we are ready to use deleteBlocks(), deployBlocks() each function.
-Next, execute the function  `deleteAllBlocks` at the beginning of `deployBlocks` to remove all blocks before placing the block.
+## add a function to remove blocks
+Now we are ready to use the functions to deploy and delete blocks.
+Next, before we deploy the blocks let's execute `deleteAllBlocks`, the function to remove all blocks in the begging of `deployBlocks`.
 
 ```lua
 
@@ -111,10 +110,10 @@ function deployBlocks()
 
 ---
 
-## Let's deploy blocks in two row.
-**ブロックを配置しよう**の時点では、You have placed only one column of blocks.
-But, it will be possible to clear the game as soon as it is.
-Let's try to change block columns  from 1 to 2.
+## deploy blocks in two rows
+At **deploy blocks**, You have deployed only one column of blocks.
+However, it will be too easy to clear the game with only one column of blocks.
+Let's try changing block columns from 1 to 2.
 
 ``` lua
 
@@ -158,7 +157,7 @@ deployBlocks()
 
 
 ## All code in this chapter
-このセクションで書いたコードの全文は以下になります。
+All code in this chapter
 
 ```lua
 -----------------------------------------------------------------------------------------
@@ -322,7 +321,6 @@ deployBlocks()
 -- ############################## ブロックを配置してみよう ##############################
 
 ```
-
-画面は以下のようになっていれば成功です。
+It's a success if the display looks like the following image.
 
 ![](./image/execBreakoutSample5.png)
