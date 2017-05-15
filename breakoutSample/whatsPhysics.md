@@ -5,9 +5,9 @@ CoronaSDK's characteristic system is physics engine. (For example physics engine
 You can use the physics engine from this code.
 
 ```lua
--- 物理演算をするための機能を読み込んで `physics` に入れておく
+-- Load the function to use the physics engine and put it in `physics` .
 physics = require("physics")
--- 物理演算を起動する
+-- Activate physics engine
 physics.start(true)
 physics.setGravity(0, 0)
 ```
@@ -26,36 +26,36 @@ All code in this chapter
 ```lua
 -----------------------------------------------------------------------------------------
 --
--- ピンボールゲームを作ってみよう
+-- Let's make Breakout
 -- main.lua
 --
 -----------------------------------------------------------------------------------------
 
 
 
--- ############################## 変数とは？ ##############################
+-- ############################## What is variable？ ##############################
 
--- `width` は画面の横幅(1080)が入っている
+-- `width` contains the width(1080) of the display
 width = display.contentWidth
--- `height` は画面の縦幅(1920)が入っている
+-- `height` contains the height(1920) of the display
 height = display.contentHeight
 
--- 描画グループ
+-- display group(necassary to draw the display with coronaSDK)
 displayGroup = display.newGroup()
 
--- ############################## 変数とは？ ##############################
+-- ############################## What is variable？ ##############################
 
 
 
--- ############################## 物理演算とは？ ##############################
+-- ############################## physics is ... ##############################
 
--- 物理演算をするための機能を読み込んで `physics` に入れておく
+-- Load the function to use the physics engine and put it in `physics` .
 physics = require("physics")
--- 物理演算を起動する
+-- Activate physics engine
 physics.start(true)
 physics.setGravity(0, 0)
 
--- ############################## 物理演算とは？ ##############################
+-- ############################## physics is ... ##############################
 
 
 ```

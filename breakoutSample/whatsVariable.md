@@ -21,9 +21,9 @@ Write `=` in the center, variable on the left, variable or objects on the right.
 Try writing this code, `content width` will be stored in `width` and `content height` will be stored in `height`.<br />
 
 ```lua
--- `width` は画面の横幅(1080)が入っている
+-- `width` contains the width(1080) of the display
 width = display.contentWidth
--- `height` は画面の縦幅(1920)が入っている
+-- `height` contains the height(1920) of the display
 height = display.contentHeight
 ```
 
@@ -38,7 +38,7 @@ Create a display group to draw a screen view for CoronaSDK, and store it in vari
 Try this code.<br />
 
 ```lua
--- 描画グループ
+-- display group(necassary to draw the display with coronaSDK)
 displayGroup = display.newGroup()
 ```
 
@@ -56,24 +56,24 @@ All code in this chapter
 ```lua
 -----------------------------------------------------------------------------------------
 --
--- ピンボールゲームを作ってみよう
+-- Let's make Breakout
 -- main.lua
 --
 -----------------------------------------------------------------------------------------
 
 
 
--- ############################## 変数とは？ ##############################
+-- ############################## What is variable？ ##############################
 
--- `width` は画面の横幅(1080)が入っている
+-- `width` contains the width(1080) of the display
 width = display.contentWidth
--- `height` は画面の縦幅(1920)が入っている
+-- `height` contains the height(1920) of the display
 height = display.contentHeight
 
--- 描画グループ
+-- display group(necassary to draw the display with coronaSDK)
 displayGroup = display.newGroup()
 
--- ############################## 変数とは？ ##############################
+-- ############################## What is variable？ ##############################
 
 
 
