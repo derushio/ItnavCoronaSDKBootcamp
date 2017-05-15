@@ -30,8 +30,8 @@ Your good to go if the file inside looks like the following.
 
 ## After creating a project
 When you open `main.lua` with your editor, it should show like the image below.<br />
-You can start writing under `-- Your code here`.</br>
-Apps are made by lines of commands in English.</br>
+You can start writing under `-- Your code here`.<br />
+Apps are made by lines of commands in English.<br />
 You will write various commands(code) from now on.
 
 ![](./image/writeBreakoutSample1.png)
