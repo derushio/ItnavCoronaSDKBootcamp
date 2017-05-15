@@ -25,28 +25,29 @@ Also, since we want to deploy the blocks at there initial position at the beginn
 ```lua
 function deployBlocks()
 
-    -- ブロックを配置
+    -- Deploy blocks
         for x = 0, 4, 1 do
-            -- 何番目の要素か
+            -- Which element
             local index = x 
             blocks[index] = display.newImageRect(displayGroup,
                 "block.png", width * 1/8, 100)
-            -- (width * 1/6) => 画面を6つに分ける、2つは両端なので、実際に使えるのは4つ
-            -- (x + 1) => 分けた4つのうちの何番目か、0は端っこなので+1して無視する
+            -- (width * 1/6) => Divide the screen into six , since two are both ends, four can actually be used
+            -- (x + 1) => Which one of the four you divided . 0 is the edge of the screen , so +1 and ignore it
+
             blocks[index].x = (x + 1) * (width * 1/6)
-            -- y=0 => 400, y=1 => 600 となる
+            -- It will be y=0 => 400, y=1 => 600 
             blocks[index].y = 300
             blocks[index].tag = "block"
-            -- 後で識別しやすいように生成した順番を入れておく
+            -- Include the generated order for easy identification later on
             blocks[index].index = index
             physics.addBody(blocks[index], "static", 
                 {density = 0.0, friction = 0.0, bounce = 1.0})
 
-            -- 現在のブロック数を追加
+            -- Add the current number of blocks
             numBlocks = numBlocks + 1
         end
 
-    -- 生成したブロック数を保存
+    -- Save the number of generated blocks
     maxNumBlocks = numBlocks
 end
 
@@ -61,33 +62,33 @@ You must write them above the code of `deployBlocks`, unless it will cause an er
 
 ```lua
 function deleteBlock(index)
--- ブロックが存在しない場合は無視する
+    -- Ignore when there are no blocks
     if (blocks[index] == nil) then
-    -- returnはここで関数を終了させる命令です
-    return
+        -- return is an command to stop the function here
+        return
     end
 
--- removeSelf()は自分を画面から消す関数です
+-- removeSelf() is a function to delete itself from the screen
 blocks[index]:removeSelf()
--- もう表示されていないので空を表す `nil` を入れておきましょう
+-- Since it is not displayed anymore, assign nil which means empty
 blocks[index] = nil
--- 一つブロックを削除したので、 `numBlocks` を `-1` しておきましょう
+-- We deleted one block, so let's set `numBlocks` to `-1` .
 numBlocks = numBlocks - 1
 end
 
 function deleteAllBlocks()
--- for文でブロックを全て削除
+-- Delete all blocks using for statement
     for i = 0, maxNumBlocks, 1 do
     deleteBlock(i)
     end
 
-    -- ブロックを管理している変数を全て初期化する
+    -- Initialize all variables managing the blocks
     maxNumBlocks = 0
     numBlocks = 0
     blocks = {}
 end
 
---　必ずdeployBlocks()の前に書いてください
+--　Be sure to write before deployBlocks()
 function deployBlocks()
 
 
@@ -105,7 +106,7 @@ function deployBlocks()
 -- ここに追加
     deleteAllBlocks()
 
--- ブロック配置
+-- Place blocks
 ```
 
 ---
