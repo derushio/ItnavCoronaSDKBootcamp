@@ -189,7 +189,7 @@ function deployBlocks()
             physics.addBody(blocks[index], "static", 
                 {density = 0.0, friction = 0.0, bounce = 1.0})
 
-            -- 現在のブロック数を追加
+            -- Add the current number of blocks
             numBlocks = numBlocks + 1
         end
     end
