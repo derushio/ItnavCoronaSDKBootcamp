@@ -70,47 +70,47 @@ All code in this chapter
 ```lua
 -----------------------------------------------------------------------------------------
 --
--- ピンボールゲームを作ってみよう
+-- Let's make Breakout
 -- main.lua
 --
 -----------------------------------------------------------------------------------------
 
 
 
--- ############################## 変数とは？ ##############################
+-- ############################## What is variable？ ##############################
 
--- `width` は画面の横幅(1080)が入っている
+-- `width` contains the width(1080) of the display
 width = display.contentWidth
--- `height` は画面の縦幅(1920)が入っている
+-- `height` contains the height(1920) of the display
 height = display.contentHeight
 
--- 描画グループ
+-- display group(necassary to draw the display with coronaSDK)
 displayGroup = display.newGroup()
 
--- ############################## 変数とは？ ##############################
+-- ############################## What is variable？ ##############################
 
 
 
--- ############################## 物理演算とは？ ##############################
+-- ############################## phisics is ... ##############################
 
--- 物理演算をするための機能を読み込んで `physics` に入れておく
+-- Load the function to use the physics engine and put it in `physics` .
 physics = require("physics")
--- 物理演算を起動する
+-- Activate physics engine
 physics.start(true)
 physics.setGravity(0, 0)
 
--- ############################## 物理演算とは？ ##############################
+-- ############################## phisics is ... ##############################
 
 
 
--- ############################## 壁を作ろう ##############################
+-- ############################## Create walls ##############################
 
--- 背景黒では寂しいので、背景を追加しましょう
+-- A black color background is lonesome, so let's add a image to the background
 background = display.newImageRect(displayGroup, "bg_space.png", width, height)
 background.x = width/2
 background.y = height/2
 
--- 壁の連想配列を作ろう
+-- Let's create an associative array of walls
 walls = {}
 walls[1] = display.newLine(displayGroup, 0, 0, width, 0)
 walls[1].tag = "topWall"
@@ -124,20 +124,20 @@ walls[3].tag = "rightWall"
 walls[4] = display.newLine(displayGroup, 0, height, width, height)
 walls[4].tag = "bottomWall"
 
--- for i = 最初の値, 最後の値(含む), 幾つづつiをプラスするか do ~ end
--- `#` は要素数
+-- for i = initial value, end value(is included), How many i are added each time do ~ end
+-- `#` is the number of elements
 for i = 1, #walls, 1 do
-    -- 壁の厚さを変更
+    -- Change the wall thickness
     walls[i].strokeWidth = 50
-    -- `physics.addBody(登録する物, 種類, オプション)` 物理演算に登録
+        -- `physics.addBody(what you are registering, type, option)` Register to the  physics system
     physics.addBody(walls[i], "static", {density = 0.0, friction = 0.0, bounce = 1.0})
 end
 
--- ############################## 壁を作ろう ##############################
+-- ############################## Create walls ##############################
 
 
 
--- ############################## ボールを動かそう ##############################
+-- ############################## Let's try moving the ball ##############################
 
 ball = display.newImageRect(displayGroup, "star.png", 50, 50)
 ball.tag = "ball"
@@ -155,7 +155,7 @@ end
 
 gameStart()
 
--- ############################## ボールを動かそう ##############################
+-- ############################## Let's try moving the ball ##############################
 
 
 ```
