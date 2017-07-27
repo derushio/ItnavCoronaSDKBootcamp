@@ -116,7 +116,7 @@ function deployBlocks()
 そこで、配置するブロックを１列から２列にしてみましょう。
 
 ``` lua
-
+-- 上で書いたdeployBlocksを以下のように変更
 function deployBlocks()
     -- ブロックを配置する前に全てのブロックを削除
     deleteAllBlocks()
