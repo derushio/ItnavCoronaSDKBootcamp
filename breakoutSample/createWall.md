@@ -29,8 +29,8 @@ background.y = height/2
 テーブルは `walls = {}` で宣言でき、 `walls[0]`, `walls[1]` のような形でアクセスできます。  
 また、変数の内容を識別しやすいように `tag` にどこの壁なのかを入れておきましょう。  
 
-```lua
 以下のコードを書き、壁を描画してみましょう。
+```lua
 -- 壁の連想配列を作ろう
 walls = {}
 walls[1] = display.newLine(displayGroup, 0, 0, width, 0)
