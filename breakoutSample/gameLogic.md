@@ -6,7 +6,6 @@
 `ballStabilization` という関数を宣言し、この関数が実行されたタイミングでこのボールが向かっている方向への速度を安定化し、ついでにボールを回転させてみよう。
 
 ```lua
-
 function ballStabilization()
     -- 速度を取得して、x,yの速度を500に固定する
     local vx, vy = ball:getLinearVelocity()
