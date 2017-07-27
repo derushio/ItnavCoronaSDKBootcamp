@@ -78,7 +78,7 @@ end
 function deleteAllBlocks()
 -- for文でブロックを全て削除
     for i = 0, maxNumBlocks, 1 do
-    deleteBlock(i)
+        deleteBlock(i)
     end
 
     -- ブロックを管理している変数を全て初期化する
