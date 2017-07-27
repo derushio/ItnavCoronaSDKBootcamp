@@ -27,7 +27,7 @@ function deployBlocks()
     -- ブロックを配置
         for x = 0, 4, 1 do
             -- 何番目の要素か
-            local index = x 
+            local index = x
             blocks[index] = display.newImageRect(displayGroup,
                 "block.png", width * 1/8, 100)
             -- (width * 1/6) => 画面を7つに分ける、2つは両端なので、実際に使えるのは5つ
@@ -38,7 +38,7 @@ function deployBlocks()
             blocks[index].tag = "block"
             -- 後で識別しやすいように生成した順番を入れておく
             blocks[index].index = index
-            physics.addBody(blocks[index], "static", 
+            physics.addBody(blocks[index], "static",
                 {density = 0.0, friction = 0.0, bounce = 1.0})
 
             -- 現在のブロック数を追加
@@ -111,7 +111,7 @@ function deployBlocks()
 ---
 
 ## ブロックを２列にしてみよう
-**ブロックを配置しよう**の時点では、ブロックを１列だけ配置しました。
+**ブロックを配置しよう** の時点では、ブロックを１列だけ配置しました。
 しかし、1列ではすぐにゲームクリアできてしまいます。
 そこで、配置するブロックを１列から２列にしてみましょう。
 
@@ -128,7 +128,7 @@ function deployBlocks()
             local index = x + (y * 5)
             blocks[index] = display.newImageRect(displayGroup,
                 "block.png", width * 1/8, 100)
-            
+
             -- (width * 1/6) => 画面を7つに分ける、2つは両端なので、実際に使えるのは5つ
             -- (x + 1) => 分けた7つのうちの何番目か、0は端っこなので+1して無視する
             blocks[index].x = (x + 1) * (width * 1/6)
@@ -138,7 +138,7 @@ function deployBlocks()
             blocks[index].tag = "block"
             -- 後で識別しやすいように生成した順番を入れておく
             blocks[index].index = index
-            physics.addBody(blocks[index], "static", 
+            physics.addBody(blocks[index], "static",
                 {density = 0.0, friction = 0.0, bounce = 1.0})
 
             -- 現在のブロック数を追加
@@ -307,7 +307,7 @@ function deployBlocks()
             blocks[index].tag = "block"
             -- 後で識別しやすいように生成した順番を入れておく
             blocks[index].index = index
-            physics.addBody(blocks[index], "static", 
+            physics.addBody(blocks[index], "static",
                 {density = 0.0, friction = 0.0, bounce = 1.0})
 
             -- 現在のブロック数を追加
@@ -322,7 +322,6 @@ end
 deployBlocks()
 
 -- ############################## ブロックを配置してみよう ##############################
-
 ```
 
 画面は以下のようになっていれば成功です。

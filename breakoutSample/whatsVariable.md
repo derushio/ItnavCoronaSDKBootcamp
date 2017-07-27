@@ -73,12 +73,8 @@ height = display.contentHeight
 displayGroup = display.newGroup()
 
 -- ############################## 変数とは？ ##############################
-
-
-
-
 ```
+
 画面は以下のようになっていれば成功です。
 
 ![](./image/execBreakoutSample1.png)
-

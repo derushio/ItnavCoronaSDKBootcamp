@@ -145,7 +145,7 @@ function deployBlocks()
             blocks[index].tag = "block"
             -- 後で識別しやすいように生成した順番を入れておく
             blocks[index].index = index
-            physics.addBody(blocks[index], "static", 
+            physics.addBody(blocks[index], "static",
                 {density = 0.0, friction = 0.0, bounce = 1.0})
 
             -- 現在のブロック数を追加
@@ -181,7 +181,7 @@ function moveRacket(xPosition)
 end
 
 function displayTouchListener(event)
-   moveRacket(event.x) 
+   moveRacket(event.x)
 end
 
 -- 画面全体のタッチイベントを設定
@@ -220,7 +220,7 @@ end
 function ballStabilization()
     -- 速度を取得して、x,yの速度を500に固定する
     local vx, vy = ball:getLinearVelocity()
-        
+
     if (0 < vx) then
         vx = 500
     else
@@ -232,7 +232,7 @@ function ballStabilization()
     else
         vy = -500
     end
-    
+
     -- 速度を安定させる
     ball:setLinearVelocity(vx, vy)
     -- 回転させる

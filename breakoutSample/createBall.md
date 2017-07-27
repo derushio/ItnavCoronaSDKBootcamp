@@ -55,8 +55,8 @@ gameStart()
 ```
 
 参考
-CoronaSDK Reference \[setLinearVelocity\] 
- 
+CoronaSDK Reference \[setLinearVelocity\]
+
 [https://docs.coronalabs.com/api/type/Body/setLinearVelocity](https://docs.coronalabs.com/api/type/Body/setLinearVelocity.html)
 
 ---
@@ -155,11 +155,8 @@ end
 gameStart()
 
 -- ############################## ボールを動かそう ##############################
-
-
 ```
 
 画面は以下のようになっていれば成功です。
 
 ![](./image/execBreakoutSample4.png)
-
