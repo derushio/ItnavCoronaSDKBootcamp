@@ -131,6 +131,7 @@ function deployBlocks()
             
             blocks[index].x = (x + 1) * (width * 1/6)
             -- 下の1文は以下のように書き換え
+            -- y=0 => 400, y=1 => 600 となる
             blocks[index].y = 400 + (200 * y)
             blocks[index].tag = "block"
             --　以下は "ブロックを配置しよう" と同じ
