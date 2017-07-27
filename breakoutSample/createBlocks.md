@@ -98,7 +98,8 @@ function deployBlocks() <- これを書けというわけではなく、
 次に、ブロックを配置する前に全てのブロックを削除する関数`deleteAllBlocks`をdeployBlocksのはじめに実行するようにしましょう。
 
 ```lua
-
+-- この章のはじめに書いたdeployBlocks()の最初に
+-- deleteAllBlocks()の1文を追加
 function deployBlocks()
 -- ここに追加
     deleteAllBlocks()
