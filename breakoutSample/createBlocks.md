@@ -101,10 +101,10 @@ function deployBlocks() <- これを書けというわけではなく、
 -- この章のはじめに書いたdeployBlocks()の最初に
 -- deleteAllBlocks()の1文を追加
 function deployBlocks()
--- ここに追加
+    -- ここに追加
     deleteAllBlocks()
 
--- ブロック配置
+    -- ブロック配置
 ```
 
 ---
