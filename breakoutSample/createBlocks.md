@@ -34,7 +34,7 @@ function deployBlocks()
             -- (x + 1) => 分けた7つのうちの何番目か、0は端っこなので+1して無視する
             blocks[index].x = (x + 1) * (width * 1/6)
             -- y=0 => 400, y=1 => 600 となる
-            blocks[index].y = 300
+            blocks[index].y = 400
             blocks[index].tag = "block"
             -- 後で識別しやすいように生成した順番を入れておく
             blocks[index].index = index
