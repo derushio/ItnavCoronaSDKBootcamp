@@ -76,7 +76,7 @@ function deleteBlock(index)
 end
 
 function deleteAllBlocks()
--- for文でブロックを全て削除
+    -- for文でブロックを全て削除
     for i = 0, maxNumBlocks, 1 do
         deleteBlock(i)
     end
