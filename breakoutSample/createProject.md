@@ -37,6 +37,7 @@ OKを押すと `Open in Editor` と `Show in Finder` が表示されるので、
 ![](./image/writeBreakoutSample1.png)
 
 ![](./image/refresh.png)
+このあとコードなどを追加していって  
 このダイアログがでたらチェックボックスにチェックをいれて `Relaunch Simulator` してください。
 
 - - -
