@@ -88,10 +88,8 @@ function deleteAllBlocks()
 end
 
 --　必ずdeployBlocks()の前に書いてください
-function deployBlocks()
-
-
-
+function deployBlocks() <- これを書けというわけではなく、
+この関数の前に上のfunctionを書きましょうということ
 ```
 ---
 
