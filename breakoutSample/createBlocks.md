@@ -61,18 +61,18 @@ deployBlocks()
 
 ```lua
 function deleteBlock(index)
--- ブロックが存在しない場合は無視する
+    -- ブロックが存在しない場合は無視する
     if (blocks[index] == nil) then
-    -- returnはここで関数を終了させる命令です
-    return
+        -- returnはここで関数を終了させる命令です
+        return
     end
 
--- removeSelf()は自分を画面から消す関数です
-blocks[index]:removeSelf()
--- もう表示されていないので空を表す `nil` を入れておきましょう
-blocks[index] = nil
--- 一つブロックを削除したので、 `numBlocks` を `-1` しておきましょう
-numBlocks = numBlocks - 1
+    -- removeSelf()は自分を画面から消す関数です
+    blocks[index]:removeSelf()
+    -- もう表示されていないので空を表す `nil` を入れておきましょう
+    blocks[index] = nil
+    -- 一つブロックを削除したので、 `numBlocks` を `-1` しておきましょう
+    numBlocks = numBlocks - 1
 end
 
 function deleteAllBlocks()
