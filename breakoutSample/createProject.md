@@ -14,6 +14,10 @@ OKを押すと `Open in Editor` と `Show in Finder` が表示されるので、
 
 ![](./image/createBreakoutSample3.png)
 
+![](./image/refresh.png)
+このあとコードなどを追加して  
+このダイアログがでたらチェックボックスにチェックをいれて `Relaunch Simulator` してください。
+
 - - -
 
 ## 画像ファイルを配置しよう
@@ -35,10 +39,6 @@ OKを押すと `Open in Editor` と `Show in Finder` が表示されるので、
 これからこのテキストエディタに命令(コード)をたくさん書いていきます。
 
 ![](./image/writeBreakoutSample1.png)
-
-![](./image/refresh.png)
-このあとコードなどを追加して
-このダイアログがでたらチェックボックスにチェックをいれて `Relaunch Simulator` してください。
 
 - - -
 
